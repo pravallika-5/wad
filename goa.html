@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Goa - Travel Guide</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bookmark.css">
+    <script src="bookmark.js"></script>
+
     <style>
         body {
             font-family: 'Arial', sans-serif;
@@ -40,6 +43,7 @@
             gap: 20px;
         }
         .attraction-item {
+            position: relative;
             border: 1px solid #ccc;
             padding: 15px;
             border-radius: 8px;
@@ -55,36 +59,56 @@
             text-align: center;
             padding: 10px 0;
         }
+        .save-icon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: white;
+        padding: 5px;
+        border-radius: 50%;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+        cursor: pointer;
+    }
+    .save-icon img {
+        width: 24px;
+        height: 24px;
+    }
     </style>
 </head>
 <body>
     <div class="hero">
-        <h1>Discover Goa</h1>
+    
     </div>
-    <div class="container">
+    
         <div class="section">
-            <h2>Overview</h2>
+            <h2> <a href="goaoverview.html">Discover Goa</a></h2>
             <p>Goa, a tropical paradise on the western coast of India, is known for its beautiful beaches, historic sites, and vibrant nightlife.</p>
+            
         </div>
+        
         <div class="section">
             <h2>Top Attractions</h2>
             <div class="attraction-list">
                 <div class="attraction-item">
-                      <img src="baga-beach.jpg" alt="Baga Beach">
+                    <img src="Calangute Beach.jpg" alt="CalanguteBeach"height="300px"width=350px  style="border-radius: 10px;>
                     <a href="goaplaces.html#calangute-beach">
                         <h3>Calangute Beach</h3>
+                        <span class="bookmark-icon" onclick="toggleBookmark(this)">&#9733;
+                            <a href="saves.html" title="Save destination"></a>
+                        </span> 
+                        
                         <p>The "Queen of Beaches" known for its golden sand and lively atmosphere.</p>
                     </a>
                 </div>
                 <div class="attraction-item">
-                      <img src="baga-beach.jpg" alt="Baga Beach">
+                    <img src="anjuna-market.jpg" alt="Anjuna Flea Market">
                     <a href="goaplaces.html#anjuna-flea-market">
                         <h3>Anjuna Flea Market</h3>
                         <p>A bustling market with a mix of handicrafts, clothes, and souvenirs.</p>
                     </a>
                 </div>
                 <div class="attraction-item">
-                      <img src="baga-beach.jpg" alt="Baga Beach">
+                    <img src="bom-jesus.jpg" alt="Basilica of Bom Jesus">
                     <a href="goaplaces.html#basilica-of-bom-jesus">
                         <h3>Basilica of Bom Jesus</h3>
                         <p>A UNESCO World Heritage site with Baroque architecture and religious significance.</p>
@@ -94,7 +118,11 @@
         </div>
         <div class="section">
             <h2>Travel Tips</h2>
-            <p>Best time to visit: November to February. Be prepared for warm, sunny weather and enjoy the festive season.</p>
+            <p>For the best travel experience, explore the resources below:</p>
+            <ul>
+                <li><a href="goatime.html">Best Time to Visit Goa</a></li>
+                <li><a href="goaplaces.html">Top 7 Places to Visit in Goa</a></li>
+            </ul>
         </div>
     </div>
     <footer>

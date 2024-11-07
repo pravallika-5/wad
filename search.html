@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Guide - Home</title>
+    <style>
+        /* Include your existing CSS styling here */
+    </style>
+</head>
+<body>
+
+    <!-- Header, Hero Section, and other Content -->
+
+    <!-- Search Bar -->
+    <div class="search-bar">
+        <input id="search-input" type="text" placeholder="Search for destinations, activities...">
+        <button onclick="performSearch()">Search</button>
+    </div>
+
+    <!-- Other sections of your page -->
+
+    <!-- JavaScript to activate the search bar -->
+    <script>
+        function performSearch() {
+            // Get the search input value
+            const query = document.getElementById('search-input').value.trim();
+
+            // Check if there's a search term
+            if (query) {
+                // Example of a search alert (for testing purposes)
+                alert('You searched for: ' + query);
+
+                // Redirect to a search results page or perform other actions
+                // Uncomment the line below and replace with your search results page
+                // window.location.href = `search-results.html?query=${encodeURIComponent(query)}`;
+            } else {
+                alert("Please enter a search term.");
+            }
+        }
+    </script>
+
+</body>
+</html>

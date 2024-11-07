@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destinations in India</title>
+    <link rel="stylesheet" href="see.css">
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white; /* Default background color */
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            transition: background-image 0.5s ease; /* Smooth transition for background change */
+            background-size: cover;
+            background-position: center;
+        }
+        h1 {
+            color: white;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 32px;
+            font-weight: bold;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Highlight effect */
+        }
+
+        /* Dropdown Button Styling */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            margin-right: 20px;
+        }
+        .dropbtn {
+            background: linear-gradient(45deg, #0073e6, #00b3ff);
+            color: white;
+            padding: 18px 40px;
+            font-size: 22px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+        .dropbtn:hover {
+            background: linear-gradient(45deg, #005bb5, #008ac6);
+            box-shadow: 0 10px 18px rgba(0, 0, 0, 0.4);
+            transform: scale(1.1);
+        }
+
+        /* Dropdown Content Styling */
+        .dropdown-content, .sub-dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #ffffff;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            z-index: 1;
+            opacity: 0;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            transform: translateY(10px);
+            padding: 10px 0;
+            min-width: 250px;
+        }
+        .dropdown-content a, .sub-dropdown-content a {
+            color: #004d99;
+            padding: 16px 20px;
+            font-size: 18px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .dropdown-content a:hover, .sub-dropdown-content a:hover {
+            background-color: #f1f1f1;
+            transform: scale(1.05);
+        }
+
+        /* Image Styling in Dropdown */
+        .sub-dropdown-content img {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+            border-radius: 3px;
+        }
+
+        /* Hover Effects for Dropdown Menu */
+        .dropdown:hover .dropdown-content {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .dropdown-content .dropdown-item:hover .sub-dropdown-content {
+            display: block;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Animation for Sub-dropdown */
+        .sub-dropdown-content {
+            left: 100%;
+            top: 0;
+            min-width: 250px;
+        }
+
+        /* Arrow Icon Styling */
+        .dropbtn::after {
+            content: "▼";
+            position: absolute;
+            right: 10px;
+            font-size: 14px;
+            transition: transform 0.3s ease;
+        }
+        .dropdown:hover .dropbtn::after {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Explore Indian Travel Destinations</h1>
+    
+    <div class="dropdown">
+        <button class="dropbtn">Choose a Destination</button>
+        <div class="dropdown-content">
+            <!-- Beach Escapes -->
+            <div class="dropdown-item">
+                <a href="#" data-bg="goa.jpg">Beach Escapes</a>
+                <div class="sub-dropdown-content">
+                    <a href="goa.html" data-bg="goa.jpg"><img src="goa.jpg" alt="Goa">Goa</a>
+
+                    <a href="pondicherry.html" data-bg="pondicherry.jpg"><img src="pondicherry.jpg" alt="Pondicherry">Pondicherry</a>
+                    <a href="andaman.html" data-bg="andaman.jpg"><img src="andaman.jpg" alt="Andaman">Andaman & Nicobar Islands</a>
+                    <a href="gokarna.html" data-bg="gokarna.jpg"><img src="gokarna.jpg" alt="Gokarna">Gokarna</a>
+                    <a href="varkala.html" data-bg="varkala.jpg"><img src="varkala.jpg" alt="Varkala">Varkala</a>
+                </div>
+            </div>
+
+            <!-- Mountain Adventures -->
+            <div class="dropdown-item">
+                <a href="#" data-bg="manali.jpg">Mountain Adventures</a>
+                <div class="sub-dropdown-content">
+                    <a href="manali.html" data-bg="manali.jpg"><img src="manali.jpg" alt="Manali">Manali</a>
+                    <a href="leh.html" data-bg="leh.jpg"><img src="leh.jpg" alt="Leh-Ladakh">Leh-Ladakh</a>
+                    <a href="darjeeling.html" data-bg="darjeeling.jpg"><img src="darjeeling.jpg" alt="Darjeeling">Darjeeling</a>
+                    <a href="mcleodganj.html" data-bg="mcleodganj.jpg"><img src="mcleodganj.jpg" alt="Mcleodganj">Mcleodganj</a>
+                    <a href="spiti.html" data-bg="spiti.jpg"><img src="spiti.jpg" alt="Spiti Valley">Spiti Valley</a>
+                </div>
+            </div>
+
+            <!-- Hill Stations -->
+            <div class="dropdown-item">
+                <a href="#" data-bg="ooty.jpg">Hill Stations</a>
+                <div class="sub-dropdown-content">
+                    <a href="ooty.html" data-bg="ooty.jpg"><img src="ooty.jpg" alt="Ooty">Ooty</a>
+                    <a href="shimla.html" data-bg="shimla.jpg"><img src="shimla.jpg" alt="Shimla">Shimla</a>
+                    <a href="mussoourie.html" data-bg="mussoorie.jpg"><img src="mussoorie.jpg" alt="Mussoorie">Mussoorie</a>
+                    <a href="mountabu.html" data-bg="mountabu.jpg"><img src="mountabu.jpg" alt="Mount Abu">Mount Abu</a>
+                    <a href="coorg.html" data-bg="coorg.jpg"><img src="coorg.jpg" alt="Coorg">Coorg</a>
+                </div>
+            </div>
+
+            <!-- Wildlife Safaris -->
+            <div class="dropdown-item">
+                <a href="#" data-bg="ranthambore.jpg">Wildlife Safaris</a>
+                <div class="sub-dropdown-content">
+                    <a href="ranthambore.html" data-bg="ranthambore.jpg"><img src="ranthambore.jpg" alt="Ranthambore">Ranthambore</a>
+                    <a href="jimcorbett.html" data-bg="jimcorbett.jpg"><img src="jimcorbett.jpg" alt="Jim Corbett">Jim Corbett</a>
+                    <a href="kaziranga.html" data-bg="kaziranga.jpg"><img src="kaziranga.jpg" alt="Kaziranga">Kaziranga</a>
+                    <a href="bandhavgarh.html" data-bg="bandhavgarh.jpg"><img src="bandhavgarh.jpg" alt="Bandhavgarh">Bandhavgarh</a>
+                    <a href="periyar.html" data-bg="periyar.jpg"><img src="periyar.jpg" alt="Periyar">Periyar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const links = document.querySelectorAll('.sub-dropdown-content a');
+
+        links.forEach(link => {
+            link.addEventListener('mouseenter', () => {
+                const bgImage = link.getAttribute('data-bg');
+                document.body.style.backgroundImage = `url('${bgImage}')`;
+                document.body.style.backgroundSize = 'cover';
+                document.body.style.backgroundPosition = 'center';
+            });
+
+            link.addEventListener('mouseleave', () => {
+                document.body.style.backgroundImage = ''; // Clear the background when leaving
+                document.body.style.backgroundColor = 'white'; // Set background to white
+            });
+        });
+
+        // Reset background to white when mouse leaves the dropdown
+        const dropdown = document.querySelector('.dropdown');
+        dropdown.addEventListener('mouseleave', () => {
+            document.body.style.backgroundImage = '';
+            document.body.style.backgroundColor = 'white';
+        });
+    </script>
+</body>
+</html>
+

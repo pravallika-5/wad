@@ -1,0 +1,20 @@
+
+
+.bookmark-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px; /* Adjust size as needed */
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+/* Active state when bookmarked */
+.bookmark-icon.active {
+    color: blue; /* Turns blue when clicked/bookmarked */
+    background-color: rgba(255, 255, 255, 0.7);
+}
