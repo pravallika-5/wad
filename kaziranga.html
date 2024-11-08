@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaziranga - Travel Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bookmark.css">
+    <script src="bookmark.js"></script>
+    <script src="timecollapse.js"></script>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        .hero {
+            position:relative;
+            background: url('kaziranga.jpg') no-repeat center center/cover;
+            height: 400px;
+            width:1100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            border-radius: 15px; 
+            overflow: hidden; 
+            margin:20px auto;
+        }
+
+        .info-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f1f6fe;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: #333;
+        }
+
+        .info-container h2 {
+            margin-top: 0;
+            font-size: 24px;
+            color: rgb(125, 184, 237);
+        }
+
+        .info-container p {
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+        .attraction-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .attraction-item {
+            position: relative;
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .attraction-item a {
+            text-decoration: none;
+            color: inherit;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .save-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: white;
+            padding: 5px;
+            border-radius: 50%;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+            cursor: pointer;
+        }
+        .save-icon img {
+            width: 24px;
+            height: 24px;
+        }
+        .collapsible {
+            background-color: #f1f6fe;
+            color: #333;
+            cursor: pointer;
+            padding: 20px;
+            width: 25%;
+            border: none;
+            outline: none;
+            text-align: left;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            border-radius: 5px;
+            margin: 20px auto;
+        }
+
+        .collapsible:hover {
+            background-color: #e0ebfd;
+        }
+
+        .collapsible-content {
+            padding: 20px;
+            display: none;
+            overflow: hidden;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            margin-top: 10px;
+            width:80%;
+            margin: 20px auto;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="hero">
+
+    </div>
+
+    <div class="info-container">
+        <h2><a href="kazirangaoverview.html">Discover Kaziranga</a></h2>
+        <p>Kaziranga National Park, located in Assam, India, is renowned for its population of the Indian one-horned rhinoceros, along with diverse wildlife and bird species, attracting visitors from around the globe.</p>
+        <p>Spanning approximately 430 square kilometers, Kaziranga features floodplain grasslands, wetlands, and tropical forests. It is home to various wildlife, including tigers, elephants, and water buffalo, making it a UNESCO World Heritage Site and a sanctuary for rare species.</p>
+    </div>
+    
+    <div class="section">
+        <h2>Top Attractions</h2>
+        <div class="attraction-list">
+            <div class="attraction-item">
+                <img src="kohora.jpg" alt="Kohora Range" height="300px" width="350px" style="border-radius: 10px;">
+                <a href="kazirangaplaces.html#kohora">
+                    <h3>Kohora Range</h3>
+                    <span class="bookmark-icon" onclick="toggleBookmark(this)">&#9733;
+                        <a href="saves.html" title="Save destination"></a>
+                    </span>
+                    <p>The central range known for its dense rhino population and rich biodiversity.</p>
+                </a>
+            </div>
+            <div class="attraction-item">
+                <img src="bagori.jpg" alt="Bagori Range">
+                <a href="kazirangaplaces.html#bagori">
+                    <h3>Bagori Range</h3>
+                    <p>Western range famous for elephant and rhino sightings, offering breathtaking views of the landscape.</p>
+                </a>
+            </div>
+            <div class="attraction-item">
+                <img src="agoratoli.jpg" alt="Agoratoli Range">
+                <a href="kazirangaplaces.html#agoratoli">
+                    <h3>Agoratoli Range</h3>
+                    <p>Eastern range known for birdwatching and scenic beauty, ideal for photography enthusiasts.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Travel Tips</h2>
+        <p>Here are some essential tips for your visit:</p>
+
+        <button class="collapsible">Best Time to Visit Kaziranga</button>
+        <div class="collapsible-content">
+            <p> 
+                <ul>
+                    <li><b>November to April - Peak Season</b>
+                        <ul>
+                            <li>Comfortable temperatures and dry season, making it easier to spot animals.</li>
+                            <li>Popular for safaris, birdwatching, and nature photography.</li>
+                        </ul>
+                    </li>
+                    <li><b>April to May - Best for Rhino Sightings</b>
+                        <ul>
+                            <li>Warmer weather increases visibility near water bodies.</li>
+                            <li>Ideal for witnessing wildlife up close.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
+
+    <br>
+    <div class="collapsible" style="margin-left: -05px;">
+                   <a href="goaplaces.html">Top 7 Places to Visit in Kaziranga</a>
+                </div>
+    <footer>
+        <p>&copy; 2024 Travel Guide | Connect with us on <a href="#">social media</a></p>
+    </footer>
+</body>
+</html>
