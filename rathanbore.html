@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranthambore - Travel Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bookmark.css">
+    <script src="bookmark.js"></script>
+    <script src="timecollapse.js"></script>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        .hero {
+            position:relative;
+            background: url('ranthambore.jpg') no-repeat center center/cover;
+            height: 400px;
+            width:1100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            border-radius: 15px; 
+            overflow: hidden; 
+            margin:20px auto;
+
+        }
+       
+        .info-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f1f6fe; /* Pale color for background */
+    border-radius: 10px;       /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    color: #333;
+}
+
+.info-container h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color:rgb(125, 184, 237); /* Slightly darker color for the heading */
+}
+
+.info-container p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+        .section {
+            margin-bottom: 40px;
+        }
+        .attraction-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .attraction-item {
+            position: relative;
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .attraction-item a {
+            text-decoration: none;
+            color: inherit;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .save-icon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: white;
+        padding: 5px;
+        border-radius: 50%;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+        cursor: pointer;
+    }
+    .save-icon img {
+        width: 24px;
+        height: 24px;
+    }
+    .collapsible {
+        background-color: #f1f6fe;
+        color: #333;
+        cursor: pointer;
+        padding: 20px;
+        width: 25%;
+        border: none;
+        outline: none;
+        text-align: left;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+        border-radius: 5px;
+        margin: 20px auto;
+    }
+
+    .collapsible:hover {
+        background-color: #e0ebfd;
+    }
+
+    /* Collapsible content styling */
+    .collapsible-content {
+        padding: 20px;
+        display: none;
+        overflow: hidden;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        margin-top: 10px;
+        width:80%;
+        margin: 20px auto;
+    }
+
+    </style>
+</head>
+<body>
+    
+    <div class="hero">
+    
+    </div>
+    
+      
+            <div class="info-container">
+            <h2> <a href="ranthamboreoverview.html">Discover Ranthambore</a></h2>
+            <p> Ranthambore is a renowned wildlife sanctuary in Rajasthan, India, famous for its majestic Bengal tigers and historic Ranthambore Fort, drawing nature enthusiasts and wildlife photographers from around the world.</p>
+           <p> Situated in the Sawai Madhopur district of southeastern Rajasthan, Ranthambore National Park covers an area of approximately 1,334 square kilometers. The park lies at the junction of the Aravalli and Vindhya mountain ranges, creating a unique topography of rugged hills, dense forests, and grassy meadows. Bordered by the Chambal and Banas Rivers, Ranthambore's varied landscape is home to diverse wildlife, including leopards, sloth bears, and a range of bird species. The historic Ranthambore Fort, a UNESCO World Heritage site, overlooks the park, adding a fascinating cultural dimension to the natural beauty of the region.</p>
+        </div>
+    
+       
+        
+        <div class="section">
+            <h2>Top Attractions</h2>
+            <div class="attraction-list">
+                <div class="attraction-item">
+                    <img src="Calangute Beach.jpg" alt="CalanguteBeach"height="300px"width=350px  style="border-radius: 10px;>
+                    <a href="ranthamboreplaces.html#calangute-beach">
+                        <h3>Calangute Beach</h3>
+                        <span class="bookmark-icon" onclick="toggleBookmark(this)">&#9733;
+                            <a href="saves.html" title="Save destination"></a>
+                        </span> 
+                        
+                        <p>The "Queen of Beaches" known for its golden sand and lively atmosphere.</p>
+                    </a>
+                </div>
+                <div class="attraction-item">
+                    <img src="anjuna-market.jpg" alt="Anjuna Flea Market">
+                    <a href="goaplaces.html#anjuna-flea-market">
+                        <h3>Anjuna Flea Market</h3>
+                        <p>A bustling market with a mix of handicrafts, clothes, and souvenirs.</p>
+                    </a>
+                </div>
+                <div class="attraction-item">
+                    <img src="bom-jesus.jpg" alt="Basilica of Bom Jesus">
+                    <a href="goaplaces.html#basilica-of-bom-jesus">
+                        <h3>Basilica of Bom Jesus</h3>
+                        <p>A UNESCO World Heritage site with Baroque architecture and religious significance.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Travel Tips</h2>
+            <p>For the best travel experience, explore the resources below:</p>
+
+            <button class="collapsible">Best Time to Visit  Ranthambore</button>
+            <div class="collapsible-content">
+                <p> 
+                    <ul>
+                    <li><b> October to March  -  Ideal for Wildlife Sightings</b>
+                        <ul>
+                         <li> Pleasant, with daytime temperatures between 10°C to 25°C (50°F to 77°F), Cool mornings and evenings, making it ideal for safaris</li>
+                        <li> The dry season, with minimal rainfall, making it easier to spot wildlife</li>
+                    <li>Activities: Morning and afternoon safaris for prime wildlife sightings, Fort trekking to explore the historic Ranthambore Fort, Nature trails and guided birdwatching tours.</li></ul></li>
+                    
+                  <li> <b> April to July - Best for Tiger Sightings</b>
+                    <ul>
+                        <li>
+                        Reason:  Dry climate but offers high chances of spotting tigers by water bodies.</li>
+                       <li> 
+                        Activities: Morning and afternoon safaris, Birdwatching, and exploring the fort.</li>
+                        <li> Early morning safaris to catch tigers cooling off by water holes</li>
+
+                    <li> <b>  September to October -  Off-Season with Lush Surroundings</b>
+                        <ul>
+                       <li>Reason: Moderate to heavy rainfall, making the park green and refreshing, Temperatures range between 25°C to 35°C (77°F to 95°F)</li>  
+                    <li>Activities:  Exploring Ranthambore’s outskirts for smaller reserves and eco-tourism</li>
+                    <li>Fort and cultural tours, showcasing local history and heritage</li>
+                    <li>Photography of the monsoon-drenched greenery and landscapes</li> </ul></li></ul></p><br>
+            </div>
+            
+               
+<br>
+<div class="collapsible" style="margin-left: -05px;">
+               <a href="goaplaces.html">Top 7 Places to Visit in Rathanbore</a>
+            </div>
+            
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Travel Guide | Connect with us on <a href="#">social media</a></p>
+    </footer>
+</body>
+</html>
