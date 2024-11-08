@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shimla - Travel Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bookmark.css">
+    <script src="bookmark.js"></script>
+    <script src="timecollapse.js"></script>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        .hero {
+            position:relative;
+            background: url('shimla.jpg') no-repeat center center/cover;
+            height: 400px;
+            width:1100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            border-radius: 15px; 
+            overflow: hidden; 
+            margin:20px auto;
+
+        }
+       
+        .info-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f1f6fe; /* Pale color for background */
+    border-radius: 10px;       /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    color: #333;
+}
+
+.info-container h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color:rgb(125, 184, 237); /* Slightly darker color for the heading */
+}
+
+.info-container p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+        .section {
+            margin-bottom: 40px;
+        }
+        .attraction-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .attraction-item {
+            position: relative;
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .attraction-item a {
+            text-decoration: none;
+            color: inherit;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .save-icon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: white;
+        padding: 5px;
+        border-radius: 50%;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+        cursor: pointer;
+    }
+    .save-icon img {
+        width: 24px;
+        height: 24px;
+    }
+    .collapsible {
+        background-color: #f1f6fe;
+        color: #333;
+        cursor: pointer;
+        padding: 20px;
+        width: 25%;
+        border: none;
+        outline: none;
+        text-align: left;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+        border-radius: 5px;
+        margin: 20px auto;
+    }
+
+    .collapsible:hover {
+        background-color: #e0ebfd;
+    }
+
+    /* Collapsible content styling */
+    .collapsible-content {
+        padding: 20px;
+        display: none;
+        overflow: hidden;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        margin-top: 10px;
+        width:80%;
+        margin: 20px auto;
+    }
+
+    </style>
+</head>
+<body>
+    
+    <div class="hero">
+    
+    </div>
+    
+      
+            <div class="info-container">
+            <h2> <a href="shimlaoverview.html">Discover Shimla</a></h2>
+            <p> Shimla,Himachal Pradesh known for its natural beauty, colonial architecture, and historical significance</p>
+            <p> Shimla is situated in the northwestern Himalayas at an altitude of approximately 2,200 meters (7,200 feet) above sea level. Set along a scenic ridge in the lower ranges of the Himalayas, Shimla is surrounded by dense pine and deodar forests, with panoramic views of snow-covered peaks in the distance. It lies around 115 kilometers (71 miles) from Chandigarh, making it accessible and popular among travelers from across North India. The town is close to several notable spots, including Kufri, Narkanda, and Chail, which are known for winter sports, apple orchards, and serene landscapes. Shimla’s surroundings offer lush valleys, alpine meadows, and a cool, crisp climate, making it an ideal year-round retreat.</p>
+        </div>
+    
+       
+        
+        <div class="section">
+            <h2>Top Attractions</h2>
+            <div class="attraction-list">
+                <div class="attraction-item">
+                    <img src="Calangute Beach.jpg" alt="CalanguteBeach"height="300px"width=350px  style="border-radius: 10px;>
+                    <a href="shimlaplaces.html#calangute-beach">
+                        <h3>Calangute Beach</h3>
+                        <span class="bookmark-icon" onclick="toggleBookmark(this)">&#9733;
+                            <a href="saves.html" title="Save destination"></a>
+                        </span> 
+                        
+                        <p>The "Queen of Beaches" known for its golden sand and lively atmosphere.</p>
+                    </a>
+                </div>
+                <div class="attraction-item">
+                    <img src="anjuna-market.jpg" alt="Anjuna Flea Market">
+                    <a href="goaplaces.html#anjuna-flea-market">
+                        <h3>Anjuna Flea Market</h3>
+                        <p>A bustling market with a mix of handicrafts, clothes, and souvenirs.</p>
+                    </a>
+                </div>
+                <div class="attraction-item">
+                    <img src="bom-jesus.jpg" alt="Basilica of Bom Jesus">
+                    <a href="goaplaces.html#basilica-of-bom-jesus">
+                        <h3>Basilica of Bom Jesus</h3>
+                        <p>A UNESCO World Heritage site with Baroque architecture and religious significance.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Travel Tips</h2>
+            <p>For the best travel experience, explore the resources below:</p>
+
+            <button class="collapsible">Best Time to Visit Shimla</button>
+            <div class="collapsible-content">
+                <p> 
+                    <ul>
+                    <li><b> March to June -  Pleasant Weather and Bustling Activity</b>
+                        <ul>
+                         <li>Reason:Ideal for those seeking an escape from the summer heat in the plains.</li>
+                        <li>Food< Specialties:  Chana Madra( A popular Himachali dish made with chickpeas and yogurt, often served with rice), Aloo Ke Gutke, Siddu.</li>
+                    <li>Activities:  Trekking to Jakhoo Temple, Camping and nature walks in the nearby Mashobra and Naldehra regions, Horse riding at Annandale Ground.</li></ul></li>
+                    
+                  <li> <b>  July to October - Lush Greenery and Quiet Charm</b>
+                    <ul>
+                        <li>Reason:  Ideal for those seeking a peaceful getaway from the city.</li>
+                       <li>Food Specialties: Enjoy seasonal treats like  Chana Chaat, Bhutt, Pahari Rajma.</li>
+                        <li>Activities: River rafting in Tattapani when weather conditions allow, Leisure hikes and village tours during lighter showers.</li></ul></li>
+                    
+                    <li> <b>  November to February -  Snowy Magic and Festive Charm</b>
+                        <ul>
+                       <li>Reason: Cold and often snowy, with temperatures ranging from -2°C to 10°C (28°F to 50°F), Shimla transforms into a snowy paradise, especially in January and February.</li> 
+                       <li> Food Specialties: Chana Madra, Gajar Ka Halwa, Kachoris.</li> 
+                    <li>Activities: Ice skating at Shimla’s open-air ice-skating rink, a unique winter activity,Snow treks and scenic winter photography in snowy landscapes</li> </ul></li></ul></p><br>
+            </div>
+            
+               
+<br>
+<div class="collapsible" style="margin-left: -05px;">
+               <a href="shimlaplaces.html">Top 7 Places to Visit in Shimla</a>
+            </div>
+            
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Travel Guide | Connect with us on <a href="#">social media</a></p>
+    </footer>
+</body>
+</html>
