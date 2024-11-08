@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mussoorie - Travel Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bookmark.css">
+    <script src="bookmark.js"></script>
+    <script src="timecollapse.js"></script>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        .hero {
+            position:relative;
+            background: url('mussoorie.jpg') no-repeat center center/cover;
+            height: 400px;
+            width:1100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            border-radius: 15px; 
+            overflow: hidden; 
+            margin:20px auto;
+
+        }
+       
+        .info-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f1f6fe; /* Pale color for background */
+    border-radius: 10px;       /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    color: #333;
+}
+
+.info-container h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color:rgb(125, 184, 237); /* Slightly darker color for the heading */
+}
+
+.info-container p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+        .section {
+            margin-bottom: 40px;
+        }
+        .attraction-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .attraction-item {
+            position: relative;
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .attraction-item a {
+            text-decoration: none;
+            color: inherit;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .save-icon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: white;
+        padding: 5px;
+        border-radius: 50%;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+        cursor: pointer;
+    }
+    .save-icon img {
+        width: 24px;
+        height: 24px;
+    }
+    .collapsible {
+        background-color: #f1f6fe;
+        color: #333;
+        cursor: pointer;
+        padding: 20px;
+        width: 25%;
+        border: none;
+        outline: none;
+        text-align: left;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+        border-radius: 5px;
+        margin: 20px auto;
+    }
+
+    .collapsible:hover {
+        background-color: #e0ebfd;
+    }
+
+    /* Collapsible content styling */
+    .collapsible-content {
+        padding: 20px;
+        display: none;
+        overflow: hidden;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        margin-top: 10px;
+        width:80%;
+        margin: 20px auto;
+    }
+
+    </style>
+</head>
+<body>
+    
+    <div class="hero">
+    
+    </div>
+    
+      
+            <div class="info-container">
+            <h2> <a href="mussoorieoverview.html">Discover Mussoorie</a></h2>
+            <p> Mussoorie, known as the "Queen of the Hills," is a charming hill station that offers travelers picturesque views, pleasant weather, and colonial-era architecture, making it a perfect getaway in the heart of Uttarakhand..</p>
+           <p> Located at an altitude of 2,005 meters (6,578 feet) in the Garhwal Himalayas, Mussoorie is situated 35 kilometers (22 miles) from Dehradun, the capital of Uttarakhand. The town is surrounded by dense forests of oak, deodar, and pine trees, offering breathtaking views of the Shivalik Range to the south and the snow-capped peaks of the Himalayas to the north. Mussoorie is also close to several natural wonders, including Kempty Falls, Gun Hill, and Camel's Back Road, making it an ideal spot for nature lovers and adventure enthusiasts. The lush green valleys, scenic viewpoints, and cool climate make it a popular destination year-round..</p>
+        </div>
+    
+       
+        
+        <div class="section">
+            <h2>Top Attractions</h2>
+            <div class="attraction-list">
+                <div class="attraction-item">
+                    <img src="Calangute Beach.jpg" alt="CalanguteBeach"height="300px"width=350px  style="border-radius: 10px;>
+                    <a href="mussoorieplaces.html#calangute-beach">
+                        <h3>Calangute Beach</h3>
+                        <span class="bookmark-icon" onclick="toggleBookmark(this)">&#9733;
+                            <a href="saves.html" title="Save destination"></a>
+                        </span> 
+                        
+                        <p>The "Queen of Beaches" known for its golden sand and lively atmosphere.</p>
+                    </a>
+                </div>
+                <div class="attraction-item">
+                    <img src="anjuna-market.jpg" alt="Anjuna Flea Market">
+                    <a href="goaplaces.html#anjuna-flea-market">
+                        <h3>Anjuna Flea Market</h3>
+                        <p>A bustling market with a mix of handicrafts, clothes, and souvenirs.</p>
+                    </a>
+                </div>
+                <div class="attraction-item">
+                    <img src="bom-jesus.jpg" alt="Basilica of Bom Jesus">
+                    <a href="goaplaces.html#basilica-of-bom-jesus">
+                        <h3>Basilica of Bom Jesus</h3>
+                        <p>A UNESCO World Heritage site with Baroque architecture and religious significance.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Travel Tips</h2>
+            <p>For the best travel experience, explore the resources below:</p>
+
+            <button class="collapsible">Best Time to Visit Mussoorie</button>
+            <div class="collapsible-content">
+                <p> 
+                    <ul>
+                    <li><b> March to June -  Pleasant Weather and Scenic Beauty</b>
+                        <ul>
+                         <li>The weather is mild and pleasant,  Temperatures range from 15°C to 25°C (59°F to 77°F), making it perfect for outdoor activities.</li>
+                        <li>Food< Specialties:  Popular snacks like golgappas, aloo tikki, and momos sold by local vendors, Himachali Cuisine.</li>
+                    <li>Activities:  Trekking to the nearby hills and peaks, such as Lal Tibba, Paragliding and adventure sports in areas like the Camel’s Back Road, Nature walks through the lush forests and hiking to the Cloud’s End for stunning views.</li></ul></li>
+                    
+                  <li> <b>  July to October -  Rainy Retreat and Misty Views</b>
+                    <ul>
+                        <li>
+                        Reason: Humid weather with lush greenery, but frequent rain showers might interrupt outdoor activities.</li>
+                       <li>Food Specialties:  Hot Pakoras and Tea are Perfect for enjoying during the monsoon season, Enjoy hearty soups like hot lemon soup and tomato soup.</li>
+                        <li>Activities:  Indoor activities like visiting the Tibetan Buddhist temples and museums, Leisurely walks along the Mall Road, with fewer crowds and a peaceful atmosphere.</li></ul></li>
+                    
+                    <li> <b>  November to February - Chilly Weather and Snowfall</b>
+                        <ul>
+                       <li>Reason: Cold and crisp air, with snow-covered peaks offering stunning views of the surrounding mountains.</li> 
+                       <li> Food Specialties: Gajar ka Halwa,Hot Soups and Stews, Hot Chocolate .</li> 
+                    <li>Activities:  Skiing and snowboarding at Kufri and Narkanda, Ice skating and snow trekking in areas around Mussoorie.</li> </ul></li></ul></p><br>
+            </div>
+            
+               
+<br>
+<div class="collapsible" style="margin-left: -05px;">
+               <a href="mussoorieplaces.html">Top 7 Places to Visit in Mussoorie</a>
+            </div>
+            
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Travel Guide | Connect with us on <a href="#">social media</a></p>
+    </footer>
+</body>
+</html>
