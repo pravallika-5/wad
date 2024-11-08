@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ooty - Travel Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bookmark.css">
+    <script src="bookmark.js"></script>
+    <script src="timecollapse.js"></script>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        .hero {
+            position:relative;
+            background: url('ooty.jpg') no-repeat center center/cover;
+            height: 400px;
+            width:1100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            border-radius: 15px; 
+            overflow: hidden; 
+            margin:20px auto;
+
+        }
+       
+        .info-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f1f6fe; /* Pale color for background */
+    border-radius: 10px;       /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    color: #333;
+}
+
+.info-container h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color:rgb(125, 184, 237); /* Slightly darker color for the heading */
+}
+
+.info-container p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+        .section {
+            margin-bottom: 40px;
+        }
+        .attraction-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .attraction-item {
+            position: relative;
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .attraction-item a {
+            text-decoration: none;
+            color: inherit;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .save-icon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: white;
+        padding: 5px;
+        border-radius: 50%;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+        cursor: pointer;
+    }
+    .save-icon img {
+        width: 24px;
+        height: 24px;
+    }
+    .collapsible {
+        background-color: #f1f6fe;
+        color: #333;
+        cursor: pointer;
+        padding: 20px;
+        width: 25%;
+        border: none;
+        outline: none;
+        text-align: left;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+        border-radius: 5px;
+        margin: 20px auto;
+    }
+
+    .collapsible:hover {
+        background-color: #e0ebfd;
+    }
+
+    /* Collapsible content styling */
+    .collapsible-content {
+        padding: 20px;
+        display: none;
+        overflow: hidden;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        margin-top: 10px;
+        width:80%;
+        margin: 20px auto;
+    }
+
+    </style>
+</head>
+<body>
+    
+    <div class="hero">
+    
+    </div>
+            <div class="info-container">
+            <h2> <a href="ootyoverview.html">Discover Ooty</a></h2>
+            <p> Ooty, also known as the "Queen of the Hills", is a popular destination in India for its natural beauty, historical places, and tea tourism. </p>
+            <p>Located in the southern Indian state of Tamil Nadu, Ooty sits at an elevation of about 2,240 meters (7,350 feet) above sea level in the Western Ghats. This picturesque town is surrounded by lush green valleys, dense forests, and rolling hills dotted with tea plantations and eucalyptus trees. Bordered by the Nilgiri Biosphere Reserve, Ooty is also near popular spots like Coonoor, Kotagiri, and the Mudumalai Wildlife Sanctuary, offering diverse flora, fauna, and breathtaking landscapes unique to the Nilgiris.</p>
+        </div>
+    
+       
+        
+        <div class="section">
+            <h2>Top Attractions</h2>
+            <div class="attraction-list">
+                <div class="attraction-item">
+                    <img src="Calangute Beach.jpg" alt="CalanguteBeach"height="300px"width=350px  style="border-radius: 10px;>
+                    <a href="ootyplaces.html#calangute-beach">
+                        <h3>Calangute Beach</h3>
+                        <span class="bookmark-icon" onclick="toggleBookmark(this)">&#9733;
+                            <a href="saves.html" title="Save destination"></a>
+                        </span> 
+                        
+                        <p>The "Queen of Beaches" known for its golden sand and lively atmosphere.</p>
+                    </a>
+                </div>
+                <div class="attraction-item">
+                    <img src="anjuna-market.jpg" alt="Anjuna Flea Market">
+                    <a href="goaplaces.html#anjuna-flea-market">
+                        <h3>Anjuna Flea Market</h3>
+                        <p>A bustling market with a mix of handicrafts, clothes, and souvenirs.</p>
+                    </a>
+                </div>
+                <div class="attraction-item">
+                    <img src="bom-jesus.jpg" alt="Basilica of Bom Jesus">
+                    <a href="goaplaces.html#basilica-of-bom-jesus">
+                        <h3>Basilica of Bom Jesus</h3>
+                        <p>A UNESCO World Heritage site with Baroque architecture and religious significance.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Travel Tips</h2>
+            <p>For the best travel experience, explore the resources below:</p>
+
+            <button class="collapsible">Best Time to Visit Ooty</button>
+            <div class="collapsible-content">
+                <p> 
+                    <ul>
+                    <li><b> March to June -  Ideal for Sightseeing and Mild Weather</b>
+                        <ul>
+                         <li> The summer months are ideal for exploring Ooty's colorful terrain, with clear skies, pleasant temperatures, and fewer mists. This is also the time for the Summer Festival, and the Ooty Botanical Gardens, Doddabetta Peak, and Ooty Lake are at their best. </li>
+                        <li>Food< Specialties: Badaga Cuisine: Local dishes like akki rotti,(rice roti) and oppitu (sweet pancake) are a must-try. </li>
+                    <li>Activities:  Photography of misty hills, rain-washed scenery, and waterfalls,Eco-tours and village walks during light showers, Waterfall hikes to Pykara Falls and Catherine Falls.</li>
+                    
+                  <li> <b> October to November -  Ideal for Tea and Trekking</b>
+                    <ul>
+                        <li>
+                        Reason:  Mild and comfortable, with temperatures ranging from 13°C to 19°C (55°F to 66°F)</li>
+                       <li>Food Specialties:  Kuzhi Paniyaram: Savory rice dumplings served with chutney, Honey-based Sweets, Eucalyptus Tea: Unique to the region, perfect for cooler evenings.</li>
+                        <li>Activities:  Cycling tours through tea estates, villages, and scenic routes, Bird watching, Camping and bonfires, offering breathtaking views.</li></ul></li>
+                    
+                    <li> <b>  December to February -  Winter Magic with Clear Skies</b>
+                        <ul>
+                       <li>Reason:  Chilly temperatures, ranging from 5°C to 12°C (41°F to 54°F), Misty mornings and cool nights add a mystical charm to Ooty</li> 
+                       <li> Food Specialties: Winter brings seasonal dishes like Plum Cake, Ghee Roast Dosa, Ghee Roast Dosa, Nilgiri Tea perfect for cool weather.</li> 
+                    <li>Activities:  Mountain trekking with clear skies and stunning views, Bonfire nights and stargazing in clear winter skies, Horse riding around Ooty Lake or Wenlock Downs</li> </ul></li></ul></p><br>
+            </div>
+            
+               
+<br>
+<div class="collapsible" style="margin-left: -05px;">
+               <a href="ootyplaces.html">Top 7 Places to Visit in Ooty</a>
+            </div>
+            
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Travel Guide | Connect with us on <a href="#">social media</a></p>
+    </footer>
+</body>
+</html>
