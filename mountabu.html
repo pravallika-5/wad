@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mount Abu - Travel Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bookmark.css">
+    <script src="bookmark.js"></script>
+    <script src="timecollapse.js"></script>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        .hero {
+            position:relative;
+            background: url('mountabu.jpg') no-repeat center center/cover;
+            height: 400px;
+            width:1100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            border-radius: 15px; 
+            overflow: hidden; 
+            margin:20px auto;
+
+        }
+       
+        .info-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f1f6fe; /* Pale color for background */
+    border-radius: 10px;       /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    color: #333;
+}
+
+.info-container h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color:rgb(125, 184, 237); /* Slightly darker color for the heading */
+}
+
+.info-container p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+        .section {
+            margin-bottom: 40px;
+        }
+        .attraction-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .attraction-item {
+            position: relative;
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .attraction-item a {
+            text-decoration: none;
+            color: inherit;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .save-icon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: white;
+        padding: 5px;
+        border-radius: 50%;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+        cursor: pointer;
+    }
+    .save-icon img {
+        width: 24px;
+        height: 24px;
+    }
+    .collapsible {
+        background-color: #f1f6fe;
+        color: #333;
+        cursor: pointer;
+        padding: 20px;
+        width: 25%;
+        border: none;
+        outline: none;
+        text-align: left;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+        border-radius: 5px;
+        margin: 20px auto;
+    }
+
+    .collapsible:hover {
+        background-color: #e0ebfd;
+    }
+
+    /* Collapsible content styling */
+    .collapsible-content {
+        padding: 20px;
+        display: none;
+        overflow: hidden;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        margin-top: 10px;
+        width:80%;
+        margin: 20px auto;
+    }
+
+    </style>
+</head>
+<body>
+    
+    <div class="hero">
+    
+    </div>
+    
+      
+            <div class="info-container">
+            <h2> <a href="mountabuoverview.html">Discover Mount Abu</a></h2>
+            <p> Mount Abu, the only hill station in Rajasthan, offers a refreshing escape with its cool climate, picturesque landscapes, and historic temples, making it a perfect retreat for travelers seeking peace and beauty.</p>
+           <p> Located in the Aravalli Range at an elevation of 1,220 meters (4,003 feet), Mount Abu is nestled in the southwestern part of Rajasthan, near the Gujarat border. Surrounded by lush green forests, rocky terrains, and serene lakes, the hill station offers stunning views of the surrounding plains. The town is known for its cool climate and unique flora, making it a popular destination for tourists. Mount Abu is also home to the famous Dilwara Temples, and its proximity to the desert region of Rajasthan adds a distinct charm to its surroundings. The nearby Nakki Lake, Sunset Point, and the Achalgarh Fort are some of the key attractions of this picturesque location.</p>
+        </div>
+    
+       
+        
+        <div class="section">
+            <h2>Top Attractions</h2>
+            <div class="attraction-list">
+                <div class="attraction-item">
+                    <img src="Calangute Beach.jpg" alt="CalanguteBeach"height="300px"width=350px  style="border-radius: 10px;>
+                    <a href="goaplaces.html#calangute-beach">
+                        <h3>Calangute Beach</h3>
+                        <span class="bookmark-icon" onclick="toggleBookmark(this)">&#9733;
+                            <a href="saves.html" title="Save destination"></a>
+                        </span> 
+                        
+                        <p>The "Queen of Beaches" known for its golden sand and lively atmosphere.</p>
+                    </a>
+                </div>
+                <div class="attraction-item">
+                    <img src="anjuna-market.jpg" alt="Anjuna Flea Market">
+                    <a href="goaplaces.html#anjuna-flea-market">
+                        <h3>Anjuna Flea Market</h3>
+                        <p>A bustling market with a mix of handicrafts, clothes, and souvenirs.</p>
+                    </a>
+                </div>
+                <div class="attraction-item">
+                    <img src="bom-jesus.jpg" alt="Basilica of Bom Jesus">
+                    <a href="goaplaces.html#basilica-of-bom-jesus">
+                        <h3>Basilica of Bom Jesus</h3>
+                        <p>A UNESCO World Heritage site with Baroque architecture and religious significance.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Travel Tips</h2>
+            <p>For the best travel experience, explore the resources below:</p>
+
+            <button class="collapsible">Best Time to Visit Mount Abu</button>
+            <div class="collapsible-content">
+                <p> 
+                    <ul>
+                    <li><b> March to July - Pleasant and Ideal for Sightseeing</b>
+                        <ul>
+                         <li> Temperatures range from 23°C to 38°C (73°F to 100°F), making it much cooler than the plains, Perfect for those seeking relief from the intense heat of the desert regions of Rajasthan</li>
+                        <li>Food< Specialties:  Dal Baati Churma (A traditional Rajasthani dish of lentils, wheat rolls, and sweet churma), Gatte ki Sabzi, Oysters and Rajasthani snacks.</li>
+                    <li>Activities: Trekking through the scenic hills, such as the trek to Guru Shikhar, the highest point in Mount Abu, Exploring the wildlife at the Mount Abu Wildlife Sanctuary.</li></ul></li>
+                    
+                  <li> <b> July to October - Lush Greenery and Tranquil Vibes</b>
+                    <ul>
+                        <li>
+                        Reason: Temperatures between 19°C and 30°C (66°F to 86°F), with refreshing rainfall, Heavy monsoon rains add a lush green charm to the landscape, though travel may be affected by occasional landslides.</li>
+                       <li>Food Specialties:  Spicy Pakoras and Masala Chai, Hot Pulao, Gajar ka Halwa A warm, sweet dessert made with grated carrots, perfect for rainy days.</li>
+                        <li>Activities:  Nature walks and photography amidst the monsoon greenery, Monsoon treks to quieter spots like Sunset Point and Achalgarh Fort, Bird watching as migratory birds arrive during the rainy season.</li></ul></li>
+                    
+                    <li> <b>  November to February -Cold and Cozy with Snowfall</b>
+                        <ul>
+                       <li>Reason: Temperatures can drop to 5°C to 15°C (41°F to 59°F), with chilly nights and occasional snowfall, Ideal for those seeking a winter retreat with scenic snow-covered views in the nearby hills.</li> 
+                       <li> Food Specialties:  Keema Samosa: Spicy, stuffed samosas filled with minced meat, ideal for a winter snack, Hot Soup and Bread.</li> 
+                    <li>Activities:  Skiing in nearby areas such as Mount Abu’s higher peaks during light snowfall, Exploring snow-covered landscapes and taking part in winter trekking expeditions, Ice skating and snowball fights for families visiting during peak winter months.</li> </ul></li></ul></p><br>
+            </div>
+            
+               
+<br>
+<div class="collapsible" style="margin-left: -05px;">
+               <a href="mountabuplaces.html">Top 7 Places to Visit in MountAbu</a>
+            </div>
+            
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Travel Guide | Connect with us on <a href="#">social media</a></p>
+    </footer>
+</body>
+</html>
