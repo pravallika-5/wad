@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jim Corbett - Travel Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bookmark.css">
+    <script src="bookmark.js"></script>
+    <script src="timecollapse.js"></script>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        .hero {
+            position:relative;
+            background: url('jimcorbett.jpg') no-repeat center center/cover;
+            height: 400px;
+            width:1100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            border-radius: 15px; 
+            overflow: hidden; 
+            margin:20px auto;
+        }
+
+        .info-container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #f1f6fe;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            color: #333;
+        }
+
+        .info-container h2 {
+            margin-top: 0;
+            font-size: 24px;
+            color: rgb(125, 184, 237);
+        }
+
+        .info-container p {
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+        .attraction-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .attraction-item {
+            position: relative;
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .attraction-item a {
+            text-decoration: none;
+            color: inherit;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .save-icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: white;
+            padding: 5px;
+            border-radius: 50%;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+            cursor: pointer;
+        }
+        .save-icon img {
+            width: 24px;
+            height: 24px;
+        }
+        .collapsible {
+            background-color: #f1f6fe;
+            color: #333;
+            cursor: pointer;
+            padding: 20px;
+            width: 25%;
+            border: none;
+            outline: none;
+            text-align: left;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+            border-radius: 5px;
+            margin: 20px auto;
+        }
+
+        .collapsible:hover {
+            background-color: #e0ebfd;
+        }
+
+        .collapsible-content {
+            padding: 20px;
+            display: none;
+            overflow: hidden;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            margin-top: 10px;
+            width:80%;
+            margin: 20px auto;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="hero">
+         
+    </div>
+
+    <div class="info-container">
+        <h2><a href="jimcorbettoverview.html">Discover Jim Corbett</a></h2>
+        <p>Jim Corbett National Park, situated in Uttarakhand, India, is renowned for its Bengal tiger population and beautiful landscapes, attracting wildlife enthusiasts and nature lovers worldwide.</p>
+        <p>Covering approximately 520 square kilometers, Jim Corbett features diverse topography of hills, riverine belts, marshy depressions, grasslands, and a large lake. It is home to various species, including tigers, elephants, leopards, and over 600 bird species.</p>
+    </div>
+    
+    <div class="section">
+        <h2>Top Attractions</h2>
+        <div class="attraction-list">
+            <div class="attraction-item">
+                <img src="dhikala.jpg" alt="Dhikala Zone" height="300px" width="350px" style="border-radius: 10px;">
+                <a href="jimcorbettplaces.html#dhikala">
+                    <h3>Dhikala Zone</h3>
+                    <span class="bookmark-icon" onclick="toggleBookmark(this)">&#9733;
+                        <a href="saves.html" title="Save destination"></a>
+                    </span>
+                    <p>A prime area for tiger sightings, known for its stunning valley views and rich wildlife.</p>
+                </a>
+            </div>
+            <div class="attraction-item">
+                <img src="bijrani.jpg" alt="Bijrani Zone">
+                <a href="jimcorbettplaces.html#bijrani">
+                    <h3>Bijrani Zone</h3>
+                    <p>Another popular safari zone known for its diverse flora and fauna, providing high chances of wildlife sightings.</p>
+                </a>
+            </div>
+            <div class="attraction-item">
+                <img src="garjia-temple.jpg" alt="Garjia Temple">
+                <a href="jimcorbettplaces.html#garjia-temple">
+                    <h3>Garjia Temple</h3>
+                    <p>A sacred temple located on a large rock in the Kosi River, attracting visitors for its scenic beauty and spirituality.</p>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>Travel Tips</h2>
+        <p>Plan your trip with these helpful travel tips:</p>
+
+        <button class="collapsible">Best Time to Visit Jim Corbett</button>
+        <div class="collapsible-content">
+            <p> 
+                <ul>
+                    <li><b>November to February - Ideal for Safari</b>
+                        <ul>
+                            <li>Pleasant daytime temperatures and cool evenings, ideal for animal sightings.</li>
+                            <li>Popular period for tiger spotting and nature walks.</li>
+                        </ul>
+                    </li>
+                    <li><b>April to June - High Tiger Sightings</b>
+                        <ul>
+                            <li>High temperatures but excellent visibility of tigers near water sources.</li>
+                            <li>Best for adventure and wildlife photography.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </p>
+        </div>
+    </div>
+
+
+
+
+<br>
+<div class="collapsible" style="margin-left: -05px;">
+               <a href="jimcorbettplaces.html">Top 7 Places to Visit in Jim Corbett National Park</a>
+               </a>
+            </div>
+    <footer
+        <p>&copy; 2024 Travel Guide | Connect with us on <a href="#">social media</a></p>
+    </footer>
+</body>
+</html>
