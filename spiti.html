@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spiti- Travel Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bookmark.css">
+    <script src="bookmark.js"></script>
+    <script src="timecollapse.js"></script>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        .hero {
+            position:relative;
+            background: url('spiti.jpg') no-repeat center center/cover;
+            height: 400px;
+            width:1100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            border-radius: 15px; 
+            overflow: hidden; 
+            margin:20px auto;
+
+        }
+       
+        .info-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f1f6fe; 
+    border-radius: 10px;      
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    color: #333;
+}
+
+.info-container h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color:rgb(125, 184, 237); 
+}
+
+.info-container p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+        .section {
+            margin-bottom: 40px;
+        }
+        .attraction-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .attraction-item {
+            position: relative;
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .attraction-item a {
+            text-decoration: none;
+            color: inherit;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .save-icon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: white;
+        padding: 5px;
+        border-radius: 50%;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+        cursor: pointer;
+    }
+    .save-icon img {
+        width: 24px;
+        height: 24px;
+    }
+    .collapsible {
+        background-color: #f1f6fe;
+        color: #333;
+        cursor: pointer;
+        padding: 20px;
+        width: 25%;
+        border: none;
+        outline: none;
+        text-align: left;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+        border-radius: 5px;
+        margin: 20px auto;
+    }
+
+    .collapsible:hover {
+        background-color: #e0ebfd;
+    }
+
+
+    .collapsible-content {
+        padding: 20px;
+        display: none;
+        overflow: hidden;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        margin-top: 10px;
+        width:80%;
+        margin: 20px auto;
+    }
+
+    </style>
+</head>
+<body>
+    
+    <div class="hero">
+    
+    </div>
+    
+      
+            <div class="info-container">
+            <h2> <a href="spitioverview.html">Discover Spiti</a></h2>
+            <p>"Spiti Valley, often referred to as 'Little Tibet,' is a remote and mystical destination
+                 in Himachal Pradesh, known for its stark landscapes, ancient monasteries, and peaceful Tibetan culture.".</p>
+            <p>Spiti Valley is located in the northern part of Himachal Pradesh, bordering the Tibetan
+                 plateau, and lies at an average altitude of around 12,500 feet above sea level. It is a high-altitude desert,
+                  surrounded by the mighty Himalayas to the south and the Zanskar Range to the north, which gives the region its 
+                  arid yet stunning landscape. The valley is cut off from the rest of the world during the harsh winter months due 
+                  to heavy snowfall in the surrounding passes. Spiti is primarily inhabited by Buddhists, and the valley features
+                   several ancient monasteries, such as Key Monastery and Tabo Monastery, making it not just a geographical wonder 
+                   but also a spiritual hub. The valley is connected to the rest of the state by Kunzum Pass and Rohtang Pass, though 
+                   it remains relatively isolated due to its rugged terrain and remote location.</p>
+        </div>
+    
+       
+        
+        <div class="section">
+            <h2>Top Attractions</h2>
+            <div class="attraction-list">
+                <div class="attraction-item">
+                    <img src="Calangute Beach.jpg" alt="CalanguteBeach"height="300px"width=350px  style="border-radius: 10px;>
+                    <a href="goaplaces.html#calangute-beach">
+                        <h3>Calangute Beach</h3>
+                        <span class="bookmark-icon" onclick="toggleBookmark(this)">&#9733;
+                            <a href="saves.html" title="Save destination"></a>
+                        </span> 
+                        
+                        <p>The "Queen of Beaches" known for its golden sand and lively atmosphere.</p>
+                    </a>
+                </div>
+                <div class="attraction-item">
+                    <img src="anjuna-market.jpg" alt="Anjuna Flea Market">
+                    <a href="goaplaces.html#anjuna-flea-market">
+                        <h3>Anjuna Flea Market</h3>
+                        <p>A bustling market with a mix of handicrafts, clothes, and souvenirs.</p>
+                    </a>
+                </div>
+                <div class="attraction-item">
+                    <img src="bom-jesus.jpg" alt="Basilica of Bom Jesus">
+                    <a href="goaplaces.html#basilica-of-bom-jesus">
+                        <h3>Basilica of Bom Jesus</h3>
+                        <p>A UNESCO World Heritage site with Baroque architecture and religious significance.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Travel Tips</h2>
+            <p>For the best travel experience, explore the resources below:</p>
+
+            <button class="collapsible">Best Time to Visit Spiti</button>
+            <div class="collapsible-content">
+                <p> 
+                    <ul>
+                        <li><strong>Best Time to Visit Spiti Valley</strong>
+                            <ul>
+                                <li><strong>Summer (May to September)</strong>
+                                    <ul>
+                                        <li>The weather is most favorable during the summer months, with temperatures ranging from 15°C to 20°C during the day and dropping to around 5°C at night.</li>
+                                        <li>This is the best time for road trips, trekking, and exploring the valley's unique culture, as the roads are accessible and the weather is pleasant.</li>
+                                        <li>Ideal for visiting popular attractions such as **Key Monastery**, **Tabo Monastery**, and **Chandratal Lake** while experiencing the vibrant Tibetan festivals.</li>
+                                        <li>Perfect for trekking expeditions to **Pin Valley** and **Parang La Pass**. The region’s flora and fauna are also more visible during this time.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Monsoon (July to August)</strong>
+                                    <ul>
+                                        <li>Monsoon brings some rainfall to Spiti, but the region is relatively dry compared to other parts of Himachal Pradesh.</li>
+                                        <li>However, the roads can be slippery, and some routes might be blocked due to landslides, making it a less favorable time to visit.</li>
+                                        <li>The lush green landscapes during monsoon add beauty to the valley, though caution is needed for travelers.</li>
+                                        <li>Monsoon is a quieter season for tourism, so those looking for solitude might find it appealing, but it’s not ideal for outdoor activities.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Autumn (September to November)</strong>
+                                    <ul>
+                                        <li>Autumn is another excellent time to visit Spiti, with clear skies, moderate temperatures (10°C to 15°C), and stunning autumn colors in the valley.</li>
+                                        <li>This period offers an ideal balance of good weather and fewer tourists. The valley is especially beautiful as the leaves turn golden, and the landscape takes on a vibrant hue.</li>
+                                        <li>Great for trekking, especially in the **Pin Valley National Park** and visiting the **Spiti River Valley** as the roads remain clear, and the weather is perfect for sightseeing and outdoor activities.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Winter (December to February)</strong>
+                                    <ul>
+                                        <li>Winter brings harsh, cold conditions with temperatures dropping well below freezing. While this is not the most popular time to visit, it offers a different experience.</li>
+                                        <li>Visitors can experience the beauty of Spiti covered in snow, creating a winter wonderland. However, travel during this time is only for the most adventurous as most routes are blocked by snow.</li>
+                                        <li>Winter is ideal for those interested in experiencing Tibetan festivals like **Losar**, the Tibetan New Year, which is celebrated in February.</li>
+                                        <li>Winter sports such as snow trekking and ice climbing are popular, but the harsh conditions make this a less accessible season for most travelers.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    
+                        <li><strong>Special Attractions to Watch</strong>
+                            <ul>
+                                <li><strong>Key Monastery</strong> - A majestic monastery perched on a hill, offering stunning views of the valley. Best visited during summer and autumn for a clear view of the surrounding landscape.</li>
+                                <li><strong>Chandratal Lake</strong> - The moon-shaped lake surrounded by snow-capped mountains. This attraction is most accessible in summer and autumn when the weather is warm enough for a trek.</li>
+                                <li><strong>Tabo Monastery</strong> - A UNESCO World Heritage site, renowned for its ancient murals and Buddhist artifacts, is best explored in the summer when the monastery is more accessible.</li>
+                                <li><strong>Spiti River</strong> - The serene river is a stunning sight in both summer and autumn, ideal for photography and relaxing in nature.</li>
+                            </ul>
+                        </li>
+                    
+                        <li><strong>Adventures to Do</strong>
+                            <ul>
+                                <li><strong>Trekking</strong> - Spiti Valley offers some of the best trekking routes in India, such as the **Pin Valley Trek** and **Kunzum Pass Trek**, best explored in summer and autumn when the weather is optimal.</li>
+                                <li><strong>Mountain Biking</strong> - The rugged terrain and scenic roads are perfect for mountain biking, particularly in the summer and autumn months when the weather is pleasant.</li>
+                                <li><strong>Camping</strong> - Camping near **Chandratal Lake** and other remote locations is a popular adventure activity, best enjoyed in the summer months when temperatures are moderate.</li>
+                                <li><strong>Photography</strong> - The unique landscapes and Tibetan architecture offer amazing photo opportunities, especially in the clear skies of autumn or summer.</li>
+                            </ul>
+                        </li>
+                    
+                        <li><strong>Special Mentions</strong>
+                            <ul>
+                                <li><strong>Tibetan Festivals</strong> - Spiti is home to several important Tibetan festivals, such as **Losar** (Tibetan New Year) in February and **Hemis Festival**, where visitors can experience traditional rituals, dances, and cultural performances.</li>
+                                <li><strong>Spiti Valley's Unique Culture</strong> - Spiti is known for its Tibetan culture, and visitors can experience this by staying in **homestays** with local families, learning about Buddhist traditions, and tasting traditional foods.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                      </div>
+            
+               
+<br>
+<div class="collapsible" style="margin-left: -05px;">
+               <a href="spitiplaces.html">Top 7 Places to Visit in Spiti Valley</a>
+            </div>
+            
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Travel Guide | Connect with us on <a href="#">social media</a></p>
+    </footer>
+</body>
+</html>

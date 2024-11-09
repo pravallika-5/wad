@@ -1,5 +1,5 @@
 
-    // JavaScript to handle the collapsible functionality
+   
     document.addEventListener('DOMContentLoaded', function() {
         const coll = document.querySelectorAll('.collapsible');
         coll.forEach(button => {
