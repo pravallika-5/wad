@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mcleodganj - Travel Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bookmark.css">
+    <script src="bookmark.js"></script>
+    <script src="timecollapse.js"></script>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        .hero {
+            position:relative;
+            background: url('goa.jpg') no-repeat center center/cover;
+            height: 400px;
+            width:1100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            border-radius: 15px; 
+            overflow: hidden; 
+            margin:20px auto;
+
+        }
+       
+        .info-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f1f6fe; 
+    border-radius: 10px;       
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    color: #333;
+}
+
+.info-container h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color:rgb(125, 184, 237); 
+}
+
+.info-container p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+        .section {
+            margin-bottom: 40px;
+        }
+        .attraction-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .attraction-item {
+            position: relative;
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .attraction-item a {
+            text-decoration: none;
+            color: inherit;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .save-icon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: white;
+        padding: 5px;
+        border-radius: 50%;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+        cursor: pointer;
+    }
+    .save-icon img {
+        width: 24px;
+        height: 24px;
+    }
+    .collapsible {
+        background-color: #f1f6fe;
+        color: #333;
+        cursor: pointer;
+        padding: 20px;
+        width: 25%;
+        border: none;
+        outline: none;
+        text-align: left;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+        border-radius: 5px;
+        margin: 20px auto;
+    }
+
+    .collapsible:hover {
+        background-color: #e0ebfd;
+    }
+
+    
+    .collapsible-content {
+        padding: 20px;
+        display: none;
+        overflow: hidden;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        margin-top: 10px;
+        width:80%;
+        margin: 20px auto;
+    }
+
+    </style>
+</head>
+<body>
+    
+    <div class="hero">
+    
+    </div>
+    
+      
+            <div class="info-container">
+            <h2> <a href="mcleodganjoverview.html">Discover Mcleodganj</a></h2>
+            <p>"McLeod Ganj, also known as ‘Little Lhasa,’ is a serene hill station in Himachal Pradesh, 
+                famous for its Tibetan culture, spiritual retreats, and breathtaking views of the Dhauladhar
+                 mountain range.".</p>
+           <p> McLeod Ganj is located in the northern part of Himachal Pradesh, India, just 9 kilometers
+             from Dharamshala. Situated at an altitude of around 2,082 meters (6,800 feet) above sea level, 
+             it is surrounded by the majestic Dhauladhar Range to the south, which offers stunning views of snow-capped peaks.
+              McLeod Ganj lies in the Kangra Valley, which is rich in natural beauty, with lush forests of pine, oak, and rhododendron. 
+              The town is widely known as the home of the Dalai Lama, who sought refuge here in 1959, and it continues to be a hub for
+               Tibetan culture and Buddhist teachings. The serene environment, combined with the town's spiritual and cultural importance, 
+               makes it a popular destination for travelers seeking tranquility, spiritual growth, and a taste of Tibetan life.</p>
+        </div>
+    
+       
+        
+        <div class="section">
+            <h2>Top Attractions</h2>
+            <div class="attraction-list">
+                <div class="attraction-item">
+                    <img src="Calangute Beach.jpg" alt="CalanguteBeach"height="300px"width=350px  style="border-radius: 10px;>
+                    <a href="goaplaces.html#calangute-beach">
+                        <h3>Calangute Beach</h3>
+                        <span class="bookmark-icon" onclick="toggleBookmark(this)">&#9733;
+                            <a href="saves.html" title="Save destination"></a>
+                        </span> 
+                        
+                        <p>The "Queen of Beaches" known for its golden sand and lively atmosphere.</p>
+                    </a>
+                </div>
+                <div class="attraction-item">
+                    <img src="anjuna-market.jpg" alt="Anjuna Flea Market">
+                    <a href="goaplaces.html#anjuna-flea-market">
+                        <h3>Anjuna Flea Market</h3>
+                        <p>A bustling market with a mix of handicrafts, clothes, and souvenirs.</p>
+                    </a>
+                </div>
+                <div class="attraction-item">
+                    <img src="bom-jesus.jpg" alt="Basilica of Bom Jesus">
+                    <a href="goaplaces.html#basilica-of-bom-jesus">
+                        <h3>Basilica of Bom Jesus</h3>
+                        <p>A UNESCO World Heritage site with Baroque architecture and religious significance.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Travel Tips</h2>
+            <p>For the best travel experience, explore the resources below:</p>
+
+            <button class="collapsible">Best Time to Visit Mcleodganj</button>
+            <div class="collapsible-content">
+                <p> 
+                    <ul>
+                        <li><strong>Best Time to Visit McLeod Ganj</strong>
+                            <ul>
+                                <li><strong>Summer (March to June)</strong>
+                                    <ul>
+                                        <li>The weather is pleasant, with temperatures ranging between 20°C to 30°C during the day and cooler evenings.</li>
+                                        <li>This is the best time for sightseeing and outdoor activities like trekking, nature walks, and visiting monasteries as the weather is warm and clear.</li>
+                                        <li>Special attractions during this time include **Bhagsu Waterfall**, **Namgyal Monastery**, and **Dalai Lama's Temple**.</li>
+                                        <li>The vibrant summer festivals and cultural events, like the **Tibetan New Year** celebrations, can be experienced during these months.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Monsoon (July to September)</strong>
+                                    <ul>
+                                        <li>Monsoon brings heavy rainfall to McLeod Ganj, which can make trekking routes slippery and dangerous, though the lush greenery is breathtaking.</li>
+                                        <li>The weather is cooler, but the rains make outdoor activities limited, and some roads might be blocked due to landslides.</li>
+                                        <li>Monsoon is ideal for travelers looking for solitude as it is the off-season, with fewer tourists.</li>
+                                        <li>Special attractions like **Bhagsu Waterfall** are at their fullest during this time, though visitors should exercise caution.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Autumn (October to November)</strong>
+                                    <ul>
+                                        <li>The weather is cool and pleasant, with temperatures ranging from 10°C to 20°C during the day, making it perfect for outdoor activities.</li>
+                                        <li>This is a great time for trekking to **Triund** or visiting nearby spots like **Kangra Fort** and **Norbulingka Institute**.</li>
+                                        <li>The clear skies and mild temperatures offer stunning panoramic views of the **Dhauladhar Range**, perfect for photography and sightseeing.</li>
+                                        <li>Autumn is also the time for festivals like **Dussehra**, celebrated with vibrant cultural events and processions in nearby Dharamshala.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Winter (December to February)</strong>
+                                    <ul>
+                                        <li>Winter in McLeod Ganj brings chilly temperatures, with daytime temperatures ranging between 5°C to 15°C and nighttime temperatures often dropping below freezing.</li>
+                                        <li>Snowfall can occur in higher areas like **Triund**, making it an ideal time for winter trekking and snow sports like snowboarding.</li>
+                                        <li>This season is perfect for travelers who enjoy the winter landscape, peaceful surroundings, and Tibetan winter festivals.</li>
+                                        <li>Special attractions like the **Tibetan Buddhist Monasteries** take on a serene, peaceful ambiance during the winter, offering spiritual retreats and meditation sessions.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    
+                        <li><strong>Special Attractions to Watch</strong>
+                            <ul>
+                                <li><strong>Bhagsu Waterfall</strong> - Best viewed in the summer and monsoon months when the waterfall is at its peak.</li>
+                                <li><strong>Dalai Lama Temple</strong> - Open throughout the year, it is especially serene in winter, offering a peaceful retreat for meditation.</li>
+                                <li><strong>Triund Trek</strong> - Best done in autumn when the weather is pleasant for trekking and the views of the Dhauladhar Range are spectacular.</li>
+                            </ul>
+                        </li>
+                    
+                        <li><strong>Adventures to Do</strong>
+                            <ul>
+                                <li><strong>Trekking</strong> - Ideal during the summer and autumn months, with popular treks like **Triund**, **Indrahar Pass**, and **Kareri Lake**.</li>
+                                <li><strong>Paragliding</strong> - McLeod Ganj, along with nearby Dharamshala, offers paragliding opportunities during the summer and autumn when the weather is clear.</li>
+                                <li><strong>Yoga and Meditation Retreats</strong> - The serene environment makes McLeod Ganj an ideal place for spiritual retreats, especially in the quieter winter months.</li>
+                            </ul>
+                        </li>
+                    
+                        <li><strong>Special Mentions</strong>
+                            <ul>
+                                <li><strong>Tibetan Culture</strong> - McLeod Ganj is the home of the **Dalai Lama**, and the town is rich in Tibetan culture, offering a unique spiritual experience.</li>
+                                <li><strong>Monastery Visits</strong> - Visitors can explore various Tibetan Buddhist monasteries like **Namgyal Monastery** and **Gyuto Monastery**, which are peaceful and less crowded during winter.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                      </div>
+            
+               
+<br>
+<div class="collapsible" style="margin-left: -05px;">
+               <a href="mcleodganjplaces.html">Top 7 Places to Visit in Mcleodganj</a>
+            </div>
+            
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Travel Guide | Connect with us on <a href="#">social media</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gokarna - Travel Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bookmark.css">
+    <script src="bookmark.js"></script>
+    <script src="timecollapse.js"></script>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        .hero {
+            position:relative;
+            background: url('gokarna.jpg') no-repeat center center/cover;
+            height: 400px;
+            width:1100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            border-radius: 15px; 
+            overflow: hidden; 
+            margin:20px auto;
+
+        }
+       
+        .info-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f1f6fe; 
+    border-radius: 10px;     
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    color: #333;
+}
+
+.info-container h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color:rgb(125, 184, 237); 
+}
+
+.info-container p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+        .section {
+            margin-bottom: 40px;
+        }
+        .attraction-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .attraction-item {
+            position: relative;
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .attraction-item a {
+            text-decoration: none;
+            color: inherit;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .save-icon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: white;
+        padding: 5px;
+        border-radius: 50%;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+        cursor: pointer;
+    }
+    .save-icon img {
+        width: 24px;
+        height: 24px;
+    }
+    .collapsible {
+        background-color: #f1f6fe;
+        color: #333;
+        cursor: pointer;
+        padding: 20px;
+        width: 25%;
+        border: none;
+        outline: none;
+        text-align: left;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+        border-radius: 5px;
+        margin: 20px auto;
+    }
+
+    .collapsible:hover {
+        background-color: #e0ebfd;
+    }
+
+    /* Collapsible content styling */
+    .collapsible-content {
+        padding: 20px;
+        display: none;
+        overflow: hidden;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        margin-top: 10px;
+        width:80%;
+        margin: 20px auto;
+    }
+
+    </style>
+</head>
+<body>
+    
+    <div class="hero">
+    
+    </div>
+    
+      
+            <div class="info-container">
+            <h2> <a href="gokarna.html">Discover Gokarna</a></h2>
+            <p>"Gokarna, a coastal haven in Karnataka, offers travelers a serene escape with pristine beaches,
+                 spiritual temples, and a tranquil atmosphere ideal for relaxation and adventure.".</p>
+           <p> Gokarna is a small town located on the southwestern coast of India, in the Uttara Kannada district 
+            of Karnataka. Nestled along the Arabian Sea, it is about 140 km south of Goa and 485 km northwest of Bangalore.
+             This unique destination combines spiritual charm and beach paradise, with its famous Mahabaleshwar Temple attracting 
+             Hindu pilgrims, while nearby beaches such as Om Beach, Kudle Beach, and Paradise Beach draw beach lovers and 
+             adventure seekers. Surrounded by lush hills and rugged coastline, Gokarna’s laid-back vibe and natural beauty 
+             make it an increasingly popular spot for tourists looking to experience both cultural richness and coastal tranquility.</p>
+        </div>
+    
+       
+        
+        <div class="section">
+            <h2>Top Attractions</h2>
+            <div class="attraction-list">
+                <div class="attraction-item">
+                    <img src="Calangute Beach.jpg" alt="CalanguteBeach"height="300px"width=350px  style="border-radius: 10px;>
+                    <a href="goaplaces.html#calangute-beach">
+                        <h3>Calangute Beach</h3>
+                        <span class="bookmark-icon" onclick="toggleBookmark(this)">&#9733;
+                            <a href="saves.html" title="Save destination"></a>
+                        </span> 
+                        
+                        <p>The "Queen of Beaches" known for its golden sand and lively atmosphere.</p>
+                    </a>
+                </div>
+                <div class="attraction-item">
+                    <img src="anjuna-market.jpg" alt="Anjuna Flea Market">
+                    <a href="goaplaces.html#anjuna-flea-market">
+                        <h3>Anjuna Flea Market</h3>
+                        <p>A bustling market with a mix of handicrafts, clothes, and souvenirs.</p>
+                    </a>
+                </div>
+                <div class="attraction-item">
+                    <img src="bom-jesus.jpg" alt="Basilica of Bom Jesus">
+                    <a href="goaplaces.html#basilica-of-bom-jesus">
+                        <h3>Basilica of Bom Jesus</h3>
+                        <p>A UNESCO World Heritage site with Baroque architecture and religious significance.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Travel Tips</h2>
+            <p>For the best travel experience, explore the resources below:</p>
+
+            <button class="collapsible">Best Time to Visit Gokarna</button>
+            <div class="collapsible-content">
+                <p> 
+                    <ul>
+                        <li><strong>Best Time to Visit</strong>
+                            <ul>
+                                <li><strong>Winter (November to February)</strong>
+                                    <ul>
+                                        <li>The weather is cool and pleasant, with temperatures ranging 
+                                            from 20°C to 30°C, making it ideal for sightseeing and beach activities.</li>
+                                        <li>This is the peak tourist season, perfect for enjoying Gokarna's 
+                                            beaches and exploring its temples without the summer heat or heavy monsoon rains.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Summer (March to May)</strong>
+                                    <ul>
+                                        <li>Temperatures range from 30°C to 40°C, and while it can get quite hot,
+                                             it’s less crowded than winter.</li>
+                                        <li>Although water sports are possible, the heat can make outdoor exploration
+                                             uncomfortable.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Monsoon (June to September)</strong>
+                                    <ul>
+                                        <li>Rainy season with high humidity, heavy rains, and rough seas,
+                                             which makes outdoor activities and water sports difficult.</li>
+                                        <li>This is the off-season, and while the beaches may be quieter,
+                                             there are fewer opportunities for adventures due to unpredictable weather.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                        <li><strong>Special Attractions</strong>
+                            <ul>
+                                <li><strong>Mahabaleshwar Temple</strong> - A significant pilgrimage site for Hindus,
+                                     dedicated to Lord Shiva.</li>
+                                <li><strong>Mirjan Fort</strong> - A historical site with scenic views of the surrounding coastline.</li>
+                                <li><strong>Om Beach</strong> - Known for its unique shape and peaceful atmosphere, perfect for relaxation.</li>
+                                <li><strong>Sunset at Kudle Beach</strong> - A must-see with its picturesque views and calming ambiance.</li>
+                            </ul>
+                        </li>
+                        
+                        <li><strong>Adventures to Do</strong>
+                            <ul>
+                                <li><strong>Water Sports</strong> - Best during winter and early summer for activities like kayaking, jet-skiing, and snorkeling.</li>
+                                <li><strong>Trekking</strong> - Explore the surrounding hills and secluded beaches, particularly ideal in the cooler months.</li>
+                                <li><strong>Camping on the Beach</strong> - Enjoy a peaceful camping experience at Om Beach or Kudle Beach during the winter season.</li>
+                                <li><strong>Yoga and Meditation</strong> - Gokarna’s serene environment is perfect for those looking to unwind and practice mindfulness, especially in the winter months.</li>
+                            </ul>
+                        </li>
+                    </ul>
+</div>                    
+            
+               
+<br>
+<div class="collapsible" style="margin-left: -05px;">
+               <a href="gokarnaplaces.html">Top 7 Places to Visit in Gokarna</a>
+            </div>
+            
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Travel Guide | Connect with us on <a href="#">social media</a></p>
+    </footer>
+</body>
+</html>

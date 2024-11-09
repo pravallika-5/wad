@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manali - Travel Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bookmark.css">
+    <script src="bookmark.js"></script>
+    <script src="timecollapse.js"></script>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        .hero {
+            position:relative;
+            background: url('manali.jpg') no-repeat center center/cover;
+            height: 400px;
+            width:1100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            border-radius: 15px; 
+            overflow: hidden; 
+            margin:20px auto;
+
+        }
+       
+        .info-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f1f6fe; 
+    border-radius: 10px;      
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    color: #333;
+}
+
+.info-container h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color:rgb(125, 184, 237); 
+}
+
+.info-container p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+        .section {
+            margin-bottom: 40px;
+        }
+        .attraction-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .attraction-item {
+            position: relative;
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .attraction-item a {
+            text-decoration: none;
+            color: inherit;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .save-icon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: white;
+        padding: 5px;
+        border-radius: 50%;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+        cursor: pointer;
+    }
+    .save-icon img {
+        width: 24px;
+        height: 24px;
+    }
+    .collapsible {
+        background-color: #f1f6fe;
+        color: #333;
+        cursor: pointer;
+        padding: 20px;
+        width: 25%;
+        border: none;
+        outline: none;
+        text-align: left;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+        border-radius: 5px;
+        margin: 20px auto;
+    }
+
+    .collapsible:hover {
+        background-color: #e0ebfd;
+    }
+
+    /* Collapsible content styling */
+    .collapsible-content {
+        padding: 20px;
+        display: none;
+        overflow: hidden;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        margin-top: 10px;
+        width:80%;
+        margin: 20px auto;
+    }
+
+    </style>
+</head>
+<body>
+    
+    <div class="hero">
+    
+    </div>
+    
+      
+            <div class="info-container">
+            <h2> <a href="manalioverview.html">Discover Manali</a></h2>
+            <p>"Manali, a charming hill station nestled in the majestic Himalayas, 
+                offers travelers a perfect blend of scenic beauty, adventure, and tranquility,
+                 making it a must-visit destination for nature lovers and adventure seekers alike.</p>
+           <p> Manali is located in the northern state of Himachal Pradesh, India, at an altitude of
+             about 2,050 meters (6,726 feet) above sea level. Situated in the Kullu Valley, it lies
+              along the Beas River and is surrounded by snow-capped peaks of the Pir Panjal mountain range.
+               Manali is approximately 270 km from the state capital, Shimla, and about 540 km from Delhi. 
+               The town is enveloped by lush forests of pine, cedar, and oak, and its proximity to the Rohtang 
+               Pass makes it a popular gateway to Ladakh. The surrounding region offers an enchanting mix of alpine meadows,
+                rivers, and dramatic landscapes, making it a hub for trekkers and adventurers.</p>
+        </div>
+    
+       
+        
+        <div class="section">
+            <h2>Top Attractions</h2>
+            <div class="attraction-list">
+                <div class="attraction-item">
+                    <img src="Calangute Beach.jpg" alt="CalanguteBeach"height="300px"width=350px  style="border-radius: 10px;>
+                    <a href="goaplaces.html#calangute-beach">
+                        <h3>Calangute Beach</h3>
+                        <span class="bookmark-icon" onclick="toggleBookmark(this)">&#9733;
+                            <a href="saves.html" title="Save destination"></a>
+                        </span> 
+                        
+                        <p>The "Queen of Beaches" known for its golden sand and lively atmosphere.</p>
+                    </a>
+                </div>
+                <div class="attraction-item">
+                    <img src="anjuna-market.jpg" alt="Anjuna Flea Market">
+                    <a href="goaplaces.html#anjuna-flea-market">
+                        <h3>Anjuna Flea Market</h3>
+                        <p>A bustling market with a mix of handicrafts, clothes, and souvenirs.</p>
+                    </a>
+                </div>
+                <div class="attraction-item">
+                    <img src="bom-jesus.jpg" alt="Basilica of Bom Jesus">
+                    <a href="goaplaces.html#basilica-of-bom-jesus">
+                        <h3>Basilica of Bom Jesus</h3>
+                        <p>A UNESCO World Heritage site with Baroque architecture and religious significance.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Travel Tips</h2>
+            <p>For the best travel experience, explore the resources below:</p>
+
+            <button class="collapsible">Best Time to Visit Goa</button>
+            <div class="collapsible-content">
+                <p> <ul>
+                    <li><strong>Best Time to Visit</strong>
+                        <ul>
+                            <li><strong>Winter (December to February)</strong>
+                                <ul>
+                                    <li>Manali experiences snowfall and chilly weather, with temperatures ranging from -1°C to 10°C, perfect for snow sports and a cozy mountain escape.</li>
+                                    <li>Ideal for tourists who enjoy skiing, snowboarding, and snow trekking at Rohtang Pass.</li>
+                                    <li>This is also the peak season, attracting visitors from across the world to enjoy winter activities.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Summer (March to June)</strong>
+                                <ul>
+                                    <li>Temperatures range from 10°C to 25°C, making it the most pleasant time for sightseeing, trekking, and adventure sports like paragliding.</li>
+                                    <li>The lush green landscapes and blooming flowers offer a picturesque environment, especially around Solang Valley.</li>
+                                    <li>This is the best time for outdoor activities and exploring the beauty of Manali without the cold of winter.</li>
+                                </ul>
+                            </li>
+                            <li><strong>Monsoon (July to September)</strong>
+                                <ul>
+                                    <li>Manali experiences heavy rainfall, with temperatures between 15°C to 20°C, which can make outdoor activities difficult.</li>
+                                    <li>However, the monsoon brings lush greenery, making it a good time for those looking for a quiet retreat.</li>
+                                    <li>Not recommended for trekking or adventure sports due to slippery conditions and roadblocks caused by landslides.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                
+                    <li><strong>Special Attractions</strong>
+                        <ul>
+                            <li><strong>Rohtang Pass</strong> - Famous for its snow-capped mountains and adventure sports, including skiing, snowboarding, and tobogganing, especially during winter.</li>
+                            <li><strong>Hadimba Temple</strong> - A unique, ancient temple set amidst tall cedar trees, offering a spiritual experience and stunning architecture.</li>
+                            <li><strong>Solang Valley</strong> - Known for its adventure activities like paragliding, zorbing, and skiing, it offers a panoramic view of the surrounding peaks.</li>
+                            <li><strong>Manu Temple</strong> - Dedicated to the sage Manu, this temple is set in the heart of Old Manali and provides a peaceful atmosphere with magnificent views.</li>
+                        </ul>
+                    </li>
+                
+                    <li><strong>Adventures to Do</strong>
+                        <ul>
+                            <li><strong>Skiing and Snowboarding</strong> - Best during the winter months (December to February), particularly at Rohtang Pass, which turns into a winter wonderland.</li>
+                            <li><strong>Paragliding</strong> - Enjoy the thrill of flying in Solang Valley, best during summer when the weather is ideal for aerial views of the mountains and valleys.</li>
+                            <li><strong>Trekking</strong> - The trekking season begins in summer and stretches into autumn. Popular treks include the Beas Kund Trek, Bhrigu Lake Trek, and Hampta Pass Trek.</li>
+                            <li><strong>Mountain Biking</strong> - Explore the rugged terrains around Manali during the summer months, where you can bike through scenic mountain trails.</li>
+                        </ul>
+                    </li>
+                </ul>
+                
+      </div>         
+<br>
+<div class="collapsible" style="margin-left: -05px;">
+               <a href="manaliplaces.html">Top 7 Places to Visit in Goa</a>
+            </div>
+            
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Travel Guide | Connect with us on <a href="#">social media</a></p>
+    </footer>
+</body>
+</html>

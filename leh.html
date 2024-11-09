@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leh-Ladakh - Travel Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bookmark.css">
+    <script src="bookmark.js"></script>
+    <script src="timecollapse.js"></script>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        .hero {
+            position:relative;
+            background: url('leh.jpg') no-repeat center center/cover;
+            height: 400px;
+            width:1100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            border-radius: 15px; 
+            overflow: hidden; 
+            margin:20px auto;
+
+        }
+       
+        .info-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f1f6fe; /* Pale color for background */
+    border-radius: 10px;       /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    color: #333;
+}
+
+.info-container h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color:rgb(125, 184, 237); /* Slightly darker color for the heading */
+}
+
+.info-container p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+        .section {
+            margin-bottom: 40px;
+        }
+        .attraction-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .attraction-item {
+            position: relative;
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .attraction-item a {
+            text-decoration: none;
+            color: inherit;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .save-icon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: white;
+        padding: 5px;
+        border-radius: 50%;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+        cursor: pointer;
+    }
+    .save-icon img {
+        width: 24px;
+        height: 24px;
+    }
+    .collapsible {
+        background-color: #f1f6fe;
+        color: #333;
+        cursor: pointer;
+        padding: 20px;
+        width: 25%;
+        border: none;
+        outline: none;
+        text-align: left;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+        border-radius: 5px;
+        margin: 20px auto;
+    }
+
+    .collapsible:hover {
+        background-color: #e0ebfd;
+    }
+
+    /* Collapsible content styling */
+    .collapsible-content {
+        padding: 20px;
+        display: none;
+        overflow: hidden;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        margin-top: 10px;
+        width:80%;
+        margin: 20px auto;
+    }
+
+    </style>
+</head>
+<body>
+    
+    <div class="hero">
+    
+    </div>
+    
+      
+            <div class="info-container">
+            <h2> <a href="lehoverview.html">Discover Leh-Ladakh</a></h2>
+            <p>"Leh-Ladakh, often called the 'Land of High Passes,' is a breathtaking region in northern India, known for its dramatic landscapes, high-altitude deserts, and vibrant Tibetan culture, making it a must-visit destination for adventure enthusiasts and spiritual seekers."</p>
+           <p> Leh-Ladakh is located in the northernmost part of India, in the state of Jammu and Kashmir, bordering China and Pakistan. The region lies at an average altitude of around 3,500 meters (11,500 feet) above sea level. It is surrounded by the towering peaks of the Himalayan and Karakoram mountain ranges, with the Indus River flowing through the valley. Ladakh is known for its barren, high-altitude desert terrain, which is home to stunning landscapes, including the Nubra Valley, Pangong Lake, and Tso Moriri Lake. The region is also culturally rich, with Buddhist monasteries such as Hemis and Thiksey offering glimpses into the ancient Tibetan way of life. The natural beauty, combined with its unique geography, makes Leh-Ladakh a haven for trekkers, nature lovers, and those seeking solitude in the Himalayas.</p>
+        </div>
+    
+       
+        
+        <div class="section">
+            <h2>Top Attractions</h2>
+            <div class="attraction-list">
+                <div class="attraction-item">
+                    <img src="Calangute Beach.jpg" alt="CalanguteBeach"height="300px"width=350px  style="border-radius: 10px;>
+                    <a href="goaplaces.html#calangute-beach">
+                        <h3>Calangute Beach</h3>
+                        <span class="bookmark-icon" onclick="toggleBookmark(this)">&#9733;
+                            <a href="saves.html" title="Save destination"></a>
+                        </span> 
+                        
+                        <p>The "Queen of Beaches" known for its golden sand and lively atmosphere.</p>
+                    </a>
+                </div>
+                <div class="attraction-item">
+                    <img src="anjuna-market.jpg" alt="Anjuna Flea Market">
+                    <a href="goaplaces.html#anjuna-flea-market">
+                        <h3>Anjuna Flea Market</h3>
+                        <p>A bustling market with a mix of handicrafts, clothes, and souvenirs.</p>
+                    </a>
+                </div>
+                <div class="attraction-item">
+                    <img src="bom-jesus.jpg" alt="Basilica of Bom Jesus">
+                    <a href="goaplaces.html#basilica-of-bom-jesus">
+                        <h3>Basilica of Bom Jesus</h3>
+                        <p>A UNESCO World Heritage site with Baroque architecture and religious significance.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Travel Tips</h2>
+            <p>For the best travel experience, explore the resources below:</p>
+
+            <button class="collapsible">Best Time to Visit Leh-ladakh</button>
+            <div class="collapsible-content">
+                <p> 
+                    <ul>
+                        <li><strong>Best Time to Visit</strong>
+                            <ul>
+                                <li><strong>Summer (June to September)</strong>
+                                    <ul>
+                                        <li>The weather during summer is the most pleasant, with temperatures ranging from 15°C to 30°C, making it ideal for outdoor activities and sightseeing.</li>
+                                        <li>Summer is the peak tourist season, with clear skies, warm days, and cool nights, perfect for exploring Leh, Nubra Valley, Pangong Lake, and trekking.</li>
+                                        <li>This is the best time to witness the breathtaking landscapes and enjoy the road trips via the famous Manali-Leh Highway and Srinagar-Leh Highway, which are open during these months.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Autumn (September to November)</strong>
+                                    <ul>
+                                        <li>The weather remains cool, with temperatures between 5°C and 20°C. This is a quieter time for travel, with fewer tourists but still pleasant conditions.</li>
+                                        <li>The autumn season offers mesmerizing views of golden valleys, clear skies, and a tranquil atmosphere, making it a great time for photography and peaceful exploration.</li>
+                                        <li>The days are sunny, but nights can get chilly, especially in the higher altitudes.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Winter (December to February)</strong>
+                                    <ul>
+                                        <li>Winter in Ladakh is harsh, with temperatures dropping as low as -10°C to -30°C. It is the least favorable season for most tourists due to freezing conditions.</li>
+                                        <li>However, for adventure seekers, this is the time for activities like Chadar Trek (trekking over the frozen Zanskar River) and winter photography of frozen lakes and snow-covered landscapes.</li>
+                                        <li>The region is quieter and offers a unique experience for those wanting to explore Ladakh in isolation, though accessibility is limited due to heavy snowfall and road closures.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    
+                        <li><strong>Special Attractions</strong>
+                            <ul>
+                                <li><strong>Pangong Lake</strong> - Famous for its changing colors and breathtaking beauty, this lake is a must-see during summer and autumn. It’s accessible by road, making it one of the top destinations in Ladakh.</li>
+                                <li><strong>Nubra Valley</strong> - Known for its unique sand dunes and Bactrian camels, it’s a striking contrast of cold desert and lush green patches, best visited during the warmer months of summer and autumn.</li>
+                                <li><strong>Magnetic Hill</strong> - A mysterious phenomenon where vehicles appear to move uphill without any engine power, a unique attraction that draws visitors year-round, though best seen in clear weather.</li>
+                                <li><strong>Hemis Monastery</strong> - The largest and most famous Buddhist monastery in Ladakh, it hosts the Hemis Festival in June, one of the most colorful and spiritually enriching events in Ladakh.</li>
+                            </ul>
+                        </li>
+                    
+                        <li><strong>Adventures to Do</strong>
+                            <ul>
+                                <li><strong>Road Trips</strong> - The best time for scenic road trips is in summer (June to September) when the roads to Leh, Nubra, Pangong, and Tso Moriri are open, offering thrilling journeys through the rugged terrain.</li>
+                                <li><strong>Trekking</strong> - There are several popular treks in Ladakh, including the Markha Valley Trek and the Chadar Trek. Summer and autumn are the best seasons for trekking, while winter is reserved for the extreme Chadar Trek.</li>
+                                <li><strong>Mountain Biking</strong> - Explore the challenging terrains and remote villages on a bike, with summer being the ideal time for biking expeditions through the Himalayas.</li>
+                                <li><strong>Wildlife Spotting</strong> - While Ladakh is primarily known for its stunning landscapes, it also offers opportunities for wildlife spotting, such as finding the elusive snow leopard, best in winter or early spring when animals come down to lower altitudes.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                     </div>
+            
+               
+<br>
+<div class="collapsible" style="margin-left: -05px;">
+               <a href="lehplaces.html">Top 7 Places to Visit in Goa</a>
+            </div>
+            
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Travel Guide | Connect with us on <a href="#">social media</a></p>
+    </footer>
+</body>
+</html>
