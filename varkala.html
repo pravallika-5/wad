@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Varkala - Travel Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bookmark.css">
+    <script src="bookmark.js"></script>
+    <script src="timecollapse.js"></script>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        .hero {
+            position:relative;
+            background: url('varkala.jpg') no-repeat center center/cover;
+            height: 400px;
+            width:1100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            border-radius: 15px; 
+            overflow: hidden; 
+            margin:20px auto;
+
+        }
+       
+        .info-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f1f6fe; 
+    border-radius: 10px;       
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    color: #333;
+}
+
+.info-container h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color:rgb(125, 184, 237); 
+}
+
+.info-container p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+        .section {
+            margin-bottom: 40px;
+        }
+        .attraction-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .attraction-item {
+            position: relative;
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .attraction-item a {
+            text-decoration: none;
+            color: inherit;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .save-icon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: white;
+        padding: 5px;
+        border-radius: 50%;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+        cursor: pointer;
+    }
+    .save-icon img {
+        width: 24px;
+        height: 24px;
+    }
+    .collapsible {
+        background-color: #f1f6fe;
+        color: #333;
+        cursor: pointer;
+        padding: 20px;
+        width: 25%;
+        border: none;
+        outline: none;
+        text-align: left;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+        border-radius: 5px;
+        margin: 20px auto;
+    }
+
+    .collapsible:hover {
+        background-color: #e0ebfd;
+    }
+
+    /* Collapsible content styling */
+    .collapsible-content {
+        padding: 20px;
+        display: none;
+        overflow: hidden;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        margin-top: 10px;
+        width:80%;
+        margin: 20px auto;
+    }
+
+    </style>
+</head>
+<body>
+    
+    <div class="hero">
+    
+    </div>
+    
+      
+            <div class="info-container">
+            <h2> <a href="varkalaoverview.html">Discover Varkala</a></h2>
+            <p>"Varkala, a beautiful coastal town in Kerala, offers travelers a 
+                unique blend of serene beaches, ancient temples, and a laid-back atmosphere, making it an ideal destination for relaxation and spiritual exploration."</p>
+           <p> Varkala is located in the Thiruvananthapuram district of Kerala,
+             on the southwestern coast of India, approximately 40 km north of the state capital,
+              Thiruvananthapuram. The town is renowned for its stunning cliffside views that overlook the 
+              Arabian Sea. Varkala is surrounded by lush green landscapes, tranquil beaches, and historical temples,
+               such as the Papanasam Beach and the Janardana Swamy Temple. The unique cliff beaches and vibrant local
+                culture make it a perfect blend of natural beauty and spiritual heritage</p>
+        </div>
+    
+       
+        
+        <div class="section">
+            <h2>Top Attractions</h2>
+            <div class="attraction-list">
+                <div class="attraction-item">
+                    <img src="Calangute Beach.jpg" alt="CalanguteBeach"height="300px"width=350px  style="border-radius: 10px;>
+                    <a href="goaplaces.html#calangute-beach">
+                        <h3>Calangute Beach</h3>
+                        <span class="bookmark-icon" onclick="toggleBookmark(this)">&#9733;
+                            <a href="saves.html" title="Save destination"></a>
+                        </span> 
+                        
+                        <p>The "Queen of Beaches" known for its golden sand and lively atmosphere.</p>
+                    </a>
+                </div>
+                <div class="attraction-item">
+                    <img src="anjuna-market.jpg" alt="Anjuna Flea Market">
+                    <a href="goaplaces.html#anjuna-flea-market">
+                        <h3>Anjuna Flea Market</h3>
+                        <p>A bustling market with a mix of handicrafts, clothes, and souvenirs.</p>
+                    </a>
+                </div>
+                <div class="attraction-item">
+                    <img src="bom-jesus.jpg" alt="Basilica of Bom Jesus">
+                    <a href="goaplaces.html#basilica-of-bom-jesus">
+                        <h3>Basilica of Bom Jesus</h3>
+                        <p>A UNESCO World Heritage site with Baroque architecture and religious significance.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Travel Tips</h2>
+            <p>For the best travel experience, explore the resources below:</p>
+
+            <button class="collapsible">Best Time to Visit Varkala</button>
+            <div class="collapsible-content">
+                <p> 
+                    <ul>
+                        <li><strong>Best Time to Visit</strong>
+                            <ul>
+                                <li><strong>Winter (November to February)</strong>
+                                    <ul>
+                                        <li>The weather is cool and pleasant, with temperatures ranging from 24°C to 30°C,
+                                             perfect for beach activities and sightseeing.</li>
+                                        <li>This is the peak tourist season, offering a vibrant atmosphere with many events,
+                                             including cultural festivals and yoga retreats.</li>
+                                        <li>Ideal for outdoor activities like beach walks, exploring temples, and cliffside views.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Summer (March to May)</strong>
+                                    <ul>
+                                        <li>The temperature ranges between 28°C to 35°C, and the weather is hot and humid.</li>
+                                        <li>Though less crowded, the heat can make outdoor activities less enjoyable, but it's still suitable for those seeking solitude.</li>
+                                        <li>Early mornings and late evenings are the best times for exploring during summer.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Monsoon (June to September)</strong>
+                                    <ul>
+                                        <li>Heavy rainfall and high humidity make it the off-season for most outdoor activities.</li>
+                                        <li>However, the lush green landscape comes to life, and it's the best time for those looking for a peaceful, quieter experience away from crowds.</li>
+                                        <li>Not recommended for beach activities or water sports due to rough seas.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    
+                        <li><strong>Special Attractions</strong>
+                            <ul>
+                                <li><strong>Janardana Swamy Temple</strong> - A 2000-year-old temple dedicated to Lord Vishnu, a significant spiritual and historical site in Varkala.</li>
+                                <li><strong>Papanasam Beach</strong> - Known for its unique cliffside views and cultural significance, where the waters are believed to cleanse sins.</li>
+                                <li><strong>The Varkala Cliff</strong> - A major highlight offering panoramic views of the Arabian Sea, where you can enjoy sunset views and relaxing strolls along the cliff edge.</li>
+                            </ul>
+                        </li>
+                    
+                        <li><strong>Adventures to Do</strong>
+                            <ul>
+                                <li><strong>Water Sports</strong> - Best during the winter months, where activities like parasailing, surfing, and boat rides are popular along Varkala's beach.</li>
+                                <li><strong>Yoga and Meditation</strong> - Varkala is a prominent destination for yoga retreats and meditation centers, especially during the winter season, attracting both novices and seasoned practitioners.</li>
+                                <li><strong>Cliffside Walks</strong> - Explore the picturesque cliffside beaches and enjoy hiking along the Varkala Cliff, offering stunning views of the sea, especially in the cooler months.</li>
+                                <li><strong>Ayurvedic Treatments</strong> - Take advantage of Ayurveda healing therapies available throughout the year, though they are most popular during the cooler months (winter).</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+            </div>
+            
+               
+<br>
+<div class="collapsible" style="margin-left: -05px;">
+               <a href="varkalaplaces.html">Top 7 Places to Visit in Goa</a>
+            </div>
+            
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Travel Guide | Connect with us on <a href="#">social media</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andaman&NicobarIslands- Travel Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bookmark.css">
+    <script src="bookmark.js"></script>
+    <script src="timecollapse.js"></script>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        .hero {
+            position:relative;
+            background: url('andaman.jpg') no-repeat center center/cover;
+            height: 400px;
+            width:1100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            border-radius: 15px; 
+            overflow: hidden; 
+            margin:20px auto;
+
+        }
+       
+        .info-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f1f6fe; 
+    border-radius: 10px;    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    color: #333;
+}
+
+.info-container h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color:rgb(125, 184, 237); 
+}
+
+.info-container p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+        .section {
+            margin-bottom: 40px;
+        }
+        .attraction-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .attraction-item {
+            position: relative;
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .attraction-item a {
+            text-decoration: none;
+            color: inherit;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .save-icon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: white;
+        padding: 5px;
+        border-radius: 50%;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+        cursor: pointer;
+    }
+    .save-icon img {
+        width: 24px;
+        height: 24px;
+    }
+    .collapsible {
+        background-color: #f1f6fe;
+        color: #333;
+        cursor: pointer;
+        padding: 20px;
+        width: 25%;
+        border: none;
+        outline: none;
+        text-align: left;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+        border-radius: 5px;
+        margin: 20px auto;
+    }
+
+    .collapsible:hover {
+        background-color: #e0ebfd;
+    }
+
+    
+    .collapsible-content {
+        padding: 20px;
+        display: none;
+        overflow: hidden;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        margin-top: 10px;
+        width:80%;
+        margin: 20px auto;
+    }
+
+    </style>
+</head>
+<body>
+    
+    <div class="hero">
+    
+    </div>
+    
+      
+            <div class="info-container">
+            <h2> <a href="andamanoverview.html">Discover Andaman and Nicobar Islands</a></h2>
+            <p>"The Andaman and Nicobar Islands, a pristine paradise of turquoise waters and lush rainforests, beckon travelers to explore its tropical beauty, rich marine life, and vibrant indigenous cultures.".</p><br>
+            <p>Geographical Location and Surroundings:
+                Located in the Bay of Bengal, the Andaman and Nicobar Islands form an archipelago that lies around 1,200 km southeast of mainland India. 
+                This Union Territory consists of over 500 islands, of which only a few are open to tourists. The Andaman Islands are closer to Myanmar,
+                 while the Nicobar Islands are closer to Indonesia. The capital, Port Blair, serves as the main entry point and is situated on South Andaman Island. 
+                 The islands are surrounded by coral reefs, diverse marine life, and dense tropical forests, with famous spots like Radhanagar Beach on Havelock Island and the Mahatma Gandhi Marine National Park. 
+                 The islands are known for their ecological diversity and protected tribal territories, adding to their unique natural appeal. 
+                </p>
+        </div>
+    
+       
+        
+        <div class="section">
+            <h2>Top Attractions</h2>
+            <div class="attraction-list">
+                <div class="attraction-item">
+                    <img src="Calangute Beach.jpg" alt="CalanguteBeach"height="300px"width=350px  style="border-radius: 10px;>
+                    <a href="goaplaces.html#calangute-beach">
+                        <h3>Calangute Beach</h3>
+                        <span class="bookmark-icon" onclick="toggleBookmark(this)">&#9733;
+                            <a href="saves.html" title="Save destination"></a>
+                        </span> 
+                        
+                        <p>The "Queen of Beaches" known for its golden sand and lively atmosphere.</p>
+                    </a>
+                </div>
+                <div class="attraction-item">
+                    <img src="anjuna-market.jpg" alt="Anjuna Flea Market">
+                    <a href="goaplaces.html#anjuna-flea-market">
+                        <h3>Anjuna Flea Market</h3>
+                        <p>A bustling market with a mix of handicrafts, clothes, and souvenirs.</p>
+                    </a>
+                </div>
+                <div class="attraction-item">
+                    <img src="bom-jesus.jpg" alt="Basilica of Bom Jesus">
+                    <a href="goaplaces.html#basilica-of-bom-jesus">
+                        <h3>Basilica of Bom Jesus</h3>
+                        <p>A UNESCO World Heritage site with Baroque architecture and religious significance.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Travel Tips</h2>
+            <p>For the best travel experience, explore the resources below:</p>
+
+            <button class="collapsible">Best Time to Visit Andaman and Nicobar Islands</button>
+            <div class="collapsible-content">
+                <p> 
+                    <h1>Best Time to Visit Andaman and Nicobar Islands</h1>
+                    <ul>
+                        <li><strong>Best Time to Visit</strong>
+                            <ul>
+                                <li>Winter (October to February) is the best time, with mild, pleasant weather ranging from 20°C to 30°C, ideal for sightseeing and beach activities.</li>
+                                <li>Summer (March to May) is warm, great for water sports, but humidity can be high.</li>
+                                <li>Monsoon (June to September) has heavy rains, limiting outdoor activities but offering off-season discounts for budget travelers.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Special Attractions</strong>
+                            <ul>
+                                <li>Explore Radhanagar Beach and Elephant Beach, known for pristine sand and crystal-clear waters.</li>
+                                <li>Visit Cellular Jail in Port Blair for historical insights.</li>
+                                <li>Enjoy birdwatching and sunsets at Chidiya Tapu.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Adventures to Try</strong>
+                            <ul>
+                                <li>Snorkeling and scuba diving to explore vibrant coral reefs and marine life.</li>
+                                <li>Parasailing, surfing, and kayaking are popular during winter and early summer for ideal water visibility.</li>
+                                <li>Trekking and island hopping offer adventure and scenic exploration.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Food Specialties</strong>
+                            <ul>
+                                <li>Try local seafood dishes like crab curry, grilled fish, and coconut prawn curry.</li>
+                                <li>Enjoy tropical fruits and Indian-Southeast Asian fusion dishes.</li>
+                                <li>Don't miss out on local sweets such as banana fritters and coconut-based desserts.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    
+   </div>
+            
+               
+<br>
+<div class="collapsible" style="margin-left: -05px;">
+               <a href="andamanplaces.html">Top 7 Places to Visit in Goa</a>
+            </div>
+            
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Travel Guide | Connect with us on <a href="#">social media</a></p>
+    </footer>
+</body>
+</html>

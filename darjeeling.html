@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darjeeling- Travel Guide</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bookmark.css">
+    <script src="bookmark.js"></script>
+    <script src="timecollapse.js"></script>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        
+        .hero {
+            position:relative;
+            background: url('darjeeling.jpg') no-repeat center center/cover;
+            height: 400px;
+            width:1100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            border-radius: 15px; 
+            overflow: hidden; 
+            margin:20px auto;
+
+        }
+       
+        .info-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f1f6fe; 
+    border-radius: 10px;     
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    color: #333;
+}
+
+.info-container h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color:rgb(125, 184, 237); 
+}
+
+.info-container p {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+        .section {
+            margin-bottom: 40px;
+        }
+        .attraction-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .attraction-item {
+            position: relative;
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+        }
+        .attraction-item a {
+            text-decoration: none;
+            color: inherit;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .save-icon {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: white;
+        padding: 5px;
+        border-radius: 50%;
+        box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+        cursor: pointer;
+    }
+    .save-icon img {
+        width: 24px;
+        height: 24px;
+    }
+    .collapsible {
+        background-color: #f1f6fe;
+        color: #333;
+        cursor: pointer;
+        padding: 20px;
+        width: 25%;
+        border: none;
+        outline: none;
+        text-align: left;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+        border-radius: 5px;
+        margin: 20px auto;
+    }
+
+    .collapsible:hover {
+        background-color: #e0ebfd;
+    }
+
+    
+    .collapsible-content {
+        padding: 20px;
+        display: none;
+        overflow: hidden;
+        background-color: #f9f9f9;
+        border-radius: 5px;
+        margin-top: 10px;
+        width:80%;
+        margin: 20px auto;
+    }
+
+    </style>
+</head>
+<body>
+    
+    <div class="hero">
+    
+    </div>
+    
+      
+            <div class="info-container">
+            <h2> <a href="darjeelingoverview.html">Discover Darjeeling</a></h2>
+            <p>"Darjeeling, often referred to as the 'Queen of the Hills,' is a picturesque hill station in West Bengal, 
+                famous for its tea gardens, breathtaking views of the Kanchenjunga mountain range, and its charming colonial architecture."</p>
+           <p> Darjeeling is located in the northeastern part of India, nestled in the Himalayas at an altitude of 
+            about 2,000 meters (6,500 feet) above sea level. It is situated in the state of West Bengal, near the borders 
+            of Nepal and Bhutan, and is surrounded by lush green hills and tea plantations. The town offers a panoramic
+             view of the mighty Kanchenjunga, the third-highest mountain in the world. Darjeeling is part of the Darjeeling district,
+              and it lies at the foothills of the Eastern Himalayas. The town is also known for its proximity to the Sikkim state,
+               providing travelers with a blend of different cultural influences, including Tibetan, Nepali, and Bengali. Its cool climate,
+                rich biodiversity, and colonial-era charm make it a serene escape from the hustle and bustle of the plains.</p>
+        </div>
+    
+       
+        
+        <div class="section">
+            <h2>Top Attractions</h2>
+            <div class="attraction-list">
+                <div class="attraction-item">
+                    <img src="Calangute Beach.jpg" alt="CalanguteBeach"height="300px"width=350px  style="border-radius: 10px;>
+                    <a href="goaplaces.html#calangute-beach">
+                        <h3>Calangute Beach</h3>
+                        <span class="bookmark-icon" onclick="toggleBookmark(this)">&#9733;
+                            <a href="saves.html" title="Save destination"></a>
+                        </span> 
+                        
+                        <p>The "Queen of Beaches" known for its golden sand and lively atmosphere.</p>
+                    </a>
+                </div>
+                <div class="attraction-item">
+                    <img src="anjuna-market.jpg" alt="Anjuna Flea Market">
+                    <a href="goaplaces.html#anjuna-flea-market">
+                        <h3>Anjuna Flea Market</h3>
+                        <p>A bustling market with a mix of handicrafts, clothes, and souvenirs.</p>
+                    </a>
+                </div>
+                <div class="attraction-item">
+                    <img src="bom-jesus.jpg" alt="Basilica of Bom Jesus">
+                    <a href="goaplaces.html#basilica-of-bom-jesus">
+                        <h3>Basilica of Bom Jesus</h3>
+                        <p>A UNESCO World Heritage site with Baroque architecture and religious significance.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Travel Tips</h2>
+            <p>For the best travel experience, explore the resources below:</p>
+
+            <button class="collapsible">Best Time to Visit Darjeeling</button>
+            <div class="collapsible-content">
+                <p> 
+                    <ul>
+                        <li><strong>Best Time to Visit Darjeeling</strong>
+                            <ul>
+                                <li><strong>Summer (March to June)</strong>
+                                    <ul>
+                                        <li>The weather is pleasant with temperatures ranging from 10°C to 25°C, making it ideal for sightseeing and outdoor activities.</li>
+                                        <li>Summer is the most popular time to visit, as the town remains cool and offers clear views of the Kanchenjunga mountain range.</li>
+                                        <li>Perfect for exploring tea estates, visiting **Tiger Hill** for sunrise views, and taking a ride on the **Darjeeling Himalayan Railway** (Toy Train), a UNESCO World Heritage site.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Monsoon (July to September)</strong>
+                                    <ul>
+                                        <li>During the monsoon, Darjeeling experiences heavy rainfall, with temperatures between 12°C to 22°C. This is the least ideal time to visit due to the risk of landslides and roadblocks.</li>
+                                        <li>The lush greenery is in full bloom, and though the weather is wet, the landscape is vibrant and scenic. It is a good time for nature lovers, but caution is needed due to the weather conditions.</li>
+                                        <li>Monsoon also marks the off-season, so tourists can enjoy a quieter experience but should be prepared for unpredictable weather.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Autumn (October to November)</strong>
+                                    <ul>
+                                        <li>Autumn offers crisp and clear weather with temperatures ranging from 10°C to 20°C, making it a perfect time for sightseeing and trekking.</li>
+                                        <li>The skies are clear, and views of the Kanchenjunga peak are breathtaking. This is an ideal time for outdoor activities such as trekking in nearby **Singalila National Park**.</li>
+                                        <li>Autumn is also a great time to explore Darjeeling’s tea estates, as the tea harvest season begins during this period.</li>
+                                    </ul>
+                                </li>
+                                <li><strong>Winter (December to February)</strong>
+                                    <ul>
+                                        <li>Winter in Darjeeling is cold, with temperatures ranging from 2°C to 10°C, and can dip even lower at night, especially in higher altitudes.</li>
+                                        <li>Though the weather is chilly, it’s a great time for winter photography and enjoying the peaceful, snow-capped surroundings, especially in areas like **Lover’s Meet**.</li>
+                                        <li>Winter is ideal for snow sports and adventure activities in nearby areas, and the low season offers fewer crowds for a more tranquil experience.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    
+                        <li><strong>Special Attractions to Watch</strong>
+                            <ul>
+                                <li><strong>Tiger Hill</strong> - Famous for its sunrise view over the Kanchenjunga range, especially 
+                                    stunning in the summer and autumn months.</li>
+                                <li><strong>Darjeeling Himalayan Railway</strong> - A UNESCO World Heritage Site, best enjoyed during the
+                                     clear months of summer and autumn when the weather is perfect for train rides.</li>
+                                <li><strong>Peace Pagoda</strong> - A beautiful Buddhist stupa offering panoramic views of the town and 
+                                    surrounding mountains, ideal for a peaceful retreat in all seasons.</li>
+                                <li><strong>Tea Gardens</strong> - The tea gardens are best explored in summer and autumn when the tea 
+                                    harvest season is at its peak, offering a unique opportunity to experience the production of Darjeeling tea.</li>
+                            </ul>
+                        </li>
+                    
+                        <li><strong>Adventures to Do</strong>
+                            <ul>
+                                <li><strong>Trekking</strong> - Darjeeling offers several trekking routes, with the most famous being the **Singalila Ridge Trek**, 
+                                    which provides scenic views of the Kanchenjunga range. Best done in summer or autumn.</li>
+                                <li><strong>Rock Climbing</strong> - The rugged landscape makes Darjeeling a perfect spot for rock climbing, available throughout
+                                     the year but best enjoyed in the cooler months of autumn and winter.</li>
+                                <li><strong>Mountain Biking</strong> - For adventure enthusiasts, biking through the hills and tea gardens offers an exciting challenge,
+                                     ideal during the summer months when the weather is pleasant.</li>
+                                <li><strong>Paragliding</strong> - Available in certain regions near Darjeeling, this adventure sport can be best enjoyed during the 
+                                    clearer months of spring and autumn.</li>
+                            </ul>
+                        </li>
+                    
+                        <li><strong>Special Mentions</strong>
+                            <ul>
+                                <li>The **Bengal Safari Park**, located near Darjeeling, is a unique wildlife sanctuary that
+                                     offers a chance to observe the region's rich biodiversity, best visited in autumn when the weather is ideal for nature walks.</li>
+                                <li>The **Darjeeling Flower Show** in spring (March) is an exciting event where visitors can 
+                                    witness the town’s vibrant floral displays and participate in horticultural activities.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                      </div>
+            
+               
+<br>
+<div class="collapsible" style="margin-left: -05px;">
+               <a href="darjeelingplaces.html">Top 7 Places to Visit in Darjeeling</a>
+            </div>
+            
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Travel Guide | Connect with us on <a href="#">social media</a></p>
+    </footer>
+</body>
+</html>
